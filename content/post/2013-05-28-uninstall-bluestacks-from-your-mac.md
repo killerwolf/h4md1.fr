@@ -8,7 +8,7 @@ tags:
 - nodejitsu
 ---
 
-<img class="thumbnail pull-left" src="/img/personal/posts/2013-05-28-uninstall-bluestacks-from-your-mac/bluestacks-uninstall.png" />
+<img class="thumbnail pull-left" src="/images/post/2013-05-28-uninstall-bluestacks-from-your-mac/bluestacks-uninstall.png" />
 ###BlueStacks:###
 
 For some reverse engineering needs, i installed a full featured android environement called **BlueStacks**. I decided to remove after playing with it a couple of hours. I crawled the web and found no up-to-date way of removing it. BlueStacks is a pretty intrusive app.

@@ -4,7 +4,7 @@ tags:
 - ezpublish
 - php5
 ---
-<img class="thumbnail pull-left" src="/img/personal/posts/ezpublish_media_import_rss-150x150.jpg" />
+<img class="thumbnail pull-left" src="/images/post/ezpublish_media_import_rss-150x150.jpg" />
 ###Le besoin###
 eZ publish offre la possibilité sans écrire une seule ligne de code, d’importer des contenus d’un flux RSS, sous forme de contenus eZpublish. Mais cette fonctionnalité native ne permet pas d’importer les média inclus dans la balise `<enclosure>`
 

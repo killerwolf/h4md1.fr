@@ -4,7 +4,7 @@ tags:
 - vagrant
 - ansible
 ---
-<img class="thumbnail" src="/img/personal/posts/vagrant-lamp-ansible.png" />
+<img class="thumbnail" src="/images/post/vagrant-lamp-ansible.png" />
 Vagrant is defacto standard when it comes to managing your developement machines. It allows you to spin a multi-VM developement environement in a second. 
 For more details....[VagrantUP](http://www.vagrantup.com).
 

@@ -8,7 +8,7 @@ tags:
 - widget
 ---
 
-![NetVibes iGoogle Widget](/img/personal/posts/netvibes.jpg "NetVibes iGoogle Widget")
+![NetVibes iGoogle Widget](/images/post/netvibes.jpg "NetVibes iGoogle Widget")
 
 A la base, le projet etait prévu pour mon tag:tag NabKiller, but i wanted to mess with the netvibes UWA. Ce widget affiche les horaires de diffusion des séries que je regarde régulièrement.
 
@@ -23,4 +23,4 @@ Voulant allez le plus rapidement possible pour voir mon widget fonctionner, j’
 
 Le widget prend 3 paramètres, le `tid` et le `hash` que vous trouvez dans l’url de votre flux personnalisé, et le troisiéme qui est l’adresse de mon API.
 
-![NetVibes iGoogle Widget](/img/personal/posts/netvibes-param.jpg "NetVibes iGoogle Widget")
+![NetVibes iGoogle Widget](/images/post/netvibes-param.jpg "NetVibes iGoogle Widget")

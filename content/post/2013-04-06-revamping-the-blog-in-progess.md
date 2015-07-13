@@ -7,7 +7,7 @@ tags:
 - nodejs
 - pagodabox
 ---
-![revamping the blog with Node.JS](/img/personal/posts/revamping-blog.jpg "NodeJS")
+![revamping the blog with Node.JS](/images/post/revamping-blog.jpg "NodeJS")
 
 **From now on this blog will be held in english only. Despite I am not a native english speaker, I feel more easier writing in Shakespeare language. I writing this post to announce the upcoming blob revamp.**
 
