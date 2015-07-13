@@ -1,6 +1,6 @@
 +++
 date = "2015-07-13T11:44:23Z"
-draft = true
+draft = false
 title = "First hugo blog post"
 
 +++
