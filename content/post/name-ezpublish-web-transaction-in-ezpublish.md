@@ -1,11 +1,12 @@
 ---
 title: Name eZ Publish web transaction in New Relic
+date: 2013-10-05
 tags:
 - newrelic
 - ezpublish
 ---
 
-<img class="thumbnail pull-left" src="/images/posts/2013-10/newrelic_transaction.png" />
+<img class="thumbnail text-center" src="/images/post/2013-10/newrelic_transaction.png" />
 
 When using **NewRelic PHP agent** with an eZ Publish stack. the profiled transactions will show under `/index.php`. To get better insights of what makes your app struggle.
 

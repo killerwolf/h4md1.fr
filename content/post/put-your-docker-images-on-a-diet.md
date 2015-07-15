@@ -1,5 +1,6 @@
 ---
 title: Put your docker images on a diet
+date: 2015-06-21
 tags:
 - alpine
 - docker

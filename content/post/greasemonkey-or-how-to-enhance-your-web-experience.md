@@ -1,5 +1,6 @@
 ---
 title: GreaseMonkey or how to enhance you web experience
+date: 2008-12-21
 tags:
 - google
 - greasemonkey

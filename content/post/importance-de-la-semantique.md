@@ -1,6 +1,8 @@
 ---
 title: De l’importance de la sémantique
+date: 2007-06-26
 ---
+
 **Tout est une histoire de sémantique et de mots clé ou presque, lorsqu’il s’agit d’optimiser ses pages pour le référencement. Je vais vous donner quelques outils qui vont vous être très utiles lors de ce choix crucial.
 Je me sert de 2, 3 outils qui me permettent de choisir les mots clé que je vais utiliser sur mes sites webs.**
 

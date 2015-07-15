@@ -1,5 +1,6 @@
 ---
 title: Premier essai avec l’API de mon nabkiller
+date: 2008-12-12
 tags:
 - api
 - javascript

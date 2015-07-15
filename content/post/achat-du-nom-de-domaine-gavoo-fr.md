@@ -1,5 +1,6 @@
 ---
 title: Achat du nom de domaine gavoo.fr
+date: 2007-06-13
 tags:
 - domain names
 ---

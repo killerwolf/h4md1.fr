@@ -1,5 +1,6 @@
 ---
 title: A homemade sensorbar pour Wii
+date: 2008-12-21
 tags:
 - bougie
 - sensorbar

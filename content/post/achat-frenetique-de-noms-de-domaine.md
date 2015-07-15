@@ -1,5 +1,6 @@
 ---
 title: Achat frénétique de noms de domaine
+date: 2007-07-15
 ---
 
 Il y a peine quelques jour j’ai mis la main sur 3 noms de domaines, ou plus exactement sur 1 nom de domaine avec 3 extensions différentes. Les voila `lolr.fr` `lolr.net` `lolr.org`. il est très enervant de voir le .com déjà déposé, et encore plus si ce dernier n’est pas du tout exploité par son propriétaire. Le .com est enregistré depuis 1997 jusqu’en 2012, son propriétaire a probablement oublié qu’il l’a deposé, ca arrive malheureusement souvent.

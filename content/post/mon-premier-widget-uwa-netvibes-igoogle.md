@@ -1,5 +1,6 @@
 ---
 title: Mon premier widget UWA netvibes / iGoogle
+date: 2009-01-18
 tags:
 - igoogle
 - netvibes

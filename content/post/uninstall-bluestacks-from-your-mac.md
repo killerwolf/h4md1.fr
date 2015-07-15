@@ -1,5 +1,6 @@
 ---
 title: Uninstall BlueStacks from Mac OSX
+date: 2013-05-28
 tags:
 - cloud9
 - git

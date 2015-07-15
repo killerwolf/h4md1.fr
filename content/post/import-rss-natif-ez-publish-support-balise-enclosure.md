@@ -1,5 +1,6 @@
 ---
 title: L’import RSS natif d’eZ Publish avec support de la balise enclosure
+date: 2012-07-20
 tags:
 - ezpublish
 - php5

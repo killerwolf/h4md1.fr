@@ -1,5 +1,6 @@
 ---
 title: Revamping the blog...in progress
+date: 2013-04-06
 tags:
 - cloud9
 - git

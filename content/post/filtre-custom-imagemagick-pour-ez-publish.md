@@ -1,5 +1,6 @@
 ---
 title: Filtre custom ImageMagick pour eZ Publish
+date: 2011-07-13
 tags:
 - ezpublish
 - imagemagick
