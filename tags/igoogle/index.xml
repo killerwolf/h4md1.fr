@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Igoogle on Geeky Ramblings</title>
+    <link>/tags/igoogle/</link>
+    <description>Recent content in Igoogle on Geeky Ramblings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Jan 2009 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/igoogle/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mon premier widget UWA netvibes / iGoogle</title>
+      <link>/post/mon-premier-widget-uwa-netvibes-igoogle/</link>
+      <pubDate>Sun, 18 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/post/mon-premier-widget-uwa-netvibes-igoogle/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/netvibes.jpg&#34; alt=&#34;NetVibes iGoogle Widget&#34; title=&#34;NetVibes iGoogle Widget&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;A la base, le projet etait prévu pour mon tag:tag NabKiller, but i wanted to mess with the netvibes UWA. Ce widget affiche les horaires de diffusion des séries que je regarde régulièrement.&lt;/p&gt;
+
+&lt;p&gt;Aimant beaucoup les mashups, je me suis pas amusé à lister toutes les séries qui existent. j’ai donc utilisé pour cela un services proposé par TVRage. Une fois votre compte créé sur TVRage et vos séries préférées ajoutées a votre compte, TVRage vous met à disposition un “Personalized RSS Feed” des séries difusées pendant la semaine en cours.&lt;/p&gt;
+
+&lt;p&gt;Voici le mien:
+&lt;a href=&#34;http://www.tvrage.com/myweekrss.php?tid=32948&amp;amp;hash=a60a8c06b3fd2afda135e2a42ab88a7e&#34;&gt;http://www.tvrage.com/myweekrss.php?tid=32948&amp;amp;hash=a60a8c06b3fd2afda135e2a42ab88a7e&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Comme vous pouvez le voir, le flux est très sale, on peut pas le manipuler aisément , les items sont hétérogènes. Donc ce fut assez laborieux pour agréger ce flux et lui donner l’apparence que j’ai voulu.&lt;/p&gt;
+
+&lt;p&gt;Voulant allez le plus rapidement possible pour voir mon widget fonctionner, j’ai écrit une petite API en PHP5 qui agrège ce flux et ordonne correctement les données. Il est aussi possible de se servir du parser UWA/JS fourni par netvibes, et c’est une meilleur solution. car actuellement le widget est dépendant le l’api que j’ai écrite et qui est hostée sur un de mes sites, mais qu’importe, je compte pas diffuser mon widget pour le moment, la solution PHP me convient.&lt;/p&gt;
+
+&lt;p&gt;Le widget prend 3 paramètres, le &lt;code&gt;tid&lt;/code&gt; et le &lt;code&gt;hash&lt;/code&gt; que vous trouvez dans l’url de votre flux personnalisé, et le troisiéme qui est l’adresse de mon API.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/images/post/netvibes-param.jpg&#34; alt=&#34;NetVibes iGoogle Widget&#34; title=&#34;NetVibes iGoogle Widget&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

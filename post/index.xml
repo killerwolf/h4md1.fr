@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Geeky Ramblings</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Geeky Ramblings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Jun 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Put your docker images on a diet</title>
+      <link>/post/put-your-docker-images-on-a-diet/</link>
+      <pubDate>Sun, 21 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/put-your-docker-images-on-a-diet/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/2015/Docker_container_engine_logo.png&#34; alt=&#34;image&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;When running &lt;code&gt;docker images&lt;/code&gt; you&amp;rsquo;ll see the following, images weighting several hundred of MBs. Even simple container, providing one singe service are heavy. Why ? Because base images used, such as Ubuntu, Centos and Debian images are themselves very heavy.&lt;/p&gt;
+
+&lt;p&gt;Images based on busybox could have been an alternative, but is too far from full-featured linux OSes, we&amp;rsquo;re used to. And building images from busybox aren&amp;rsquo;t straighforward, and often requires compilation from source.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/images/post/2015/alpinelinux.png&#34; alt=&#34;image&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Let me introduce &lt;a href=&#34;https://www.alpinelinux.org/&#34;&gt;Alpine linux&lt;/a&gt;, a lightweight Linux distribution. Alpine linux popularity is increasing among the docker community. Once discovered, people are rebasing their Dockerfile with it, and are amazed how simple the switch was. I started using Alpine long before it became official on DockerHub and started creating my own php/nginx/mariadb/container, instead of using the heavy official ones.&lt;/p&gt;
+
+&lt;p&gt;Several images using Alpine as a base are available on DockerHub and their number are increaseing. My own build are publicly available on &lt;a href=&#34;https://hub.docker.com/u/killerwolf/&#34;&gt;DockerHub&lt;/a&gt;. Feel free to use and fork them on &lt;a href=&#34;https://github.com/killerwolf/Dockerfiles&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Supercharge your developement VMs with vagrant and ansible</title>
+      <link>/post/leverage-your-dev-boxes-with-vagrant-and-ansible/</link>
+      <pubDate>Wed, 30 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/leverage-your-dev-boxes-with-vagrant-and-ansible/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;/images/post/vagrant-lamp-ansible.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vagrant is defacto standard when it comes to managing your developement machines. It allows you to spin a multi-VM developement environement in a second.
+For more details&amp;hellip;.&lt;a href=&#34;http://www.vagrantup.com&#34;&gt;VagrantUP&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Vagrant isn&amp;rsquo;t a provisioning tool, but leverage the existing one, such as &lt;a href=&#34;http://puppetlabs.com&#34;&gt;puppet&lt;/a&gt; and &lt;a href=&#34;http://www.ansible.com&#34;&gt;ansible&lt;/a&gt;. Ansible is the new one in the playground. The learning curve is pretty steep, you only write your playbook in YAML, and it is devOps friendly.
+Give it a try and clone my example project &lt;a href=&#34;https://github.com/killerwolf/vagrant-lamp-ansible&#34;&gt;vagrant lamp ansible&lt;/a&gt; and get started.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Name eZ Publish web transaction in New Relic</title>
+      <link>/post/name-ezpublish-web-transaction-in-ezpublish/</link>
+      <pubDate>Sat, 05 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/post/name-ezpublish-web-transaction-in-ezpublish/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;thumbnail text-center&#34; src=&#34;/images/post/2013-10/newrelic_transaction.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When using &lt;strong&gt;NewRelic PHP agent&lt;/strong&gt; with an eZ Publish stack. the profiled transactions will show under &lt;code&gt;/index.php&lt;/code&gt;. To get better insights of what makes your app struggle.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;NewRelic&lt;/strong&gt; provides a self explanatory &lt;a href=&#34;https://docs.newrelic.com/docs/php/the-php-api&#34;&gt;&lt;strong&gt;PHP API&lt;/strong&gt;&lt;/a&gt;. This API lets you send additional metrics/data along by the ones the agent already gathers.&lt;/p&gt;
+
+&lt;p&gt;The eZ Publish extension &lt;a href=&#34;https://github.com/killerwolf/ezpublish-newrelic&#34;&gt;&lt;strong&gt;ezpublish-newrelic&lt;/strong&gt;&lt;/a&gt; I wrote allows you to track modules and theires views under a separate transaction name.&lt;/p&gt;
+
+&lt;p&gt;Code source is hosted on &lt;a href=&#34;https://github.com/killerwolf/ezpublish-newrelic&#34;&gt;GitHub&lt;/a&gt; and is available for install on &lt;a href=&#34;https://packagist.org/packages/killerwolf/ezpublish-newrelic&#34;&gt;&lt;strong&gt;Packagist&lt;/strong&gt;&lt;/a&gt; via &lt;strong&gt;Composer&lt;/strong&gt;, feel free to contribute.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Uninstall BlueStacks from Mac OSX</title>
+      <link>/post/uninstall-bluestacks-from-your-mac/</link>
+      <pubDate>Tue, 28 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/post/uninstall-bluestacks-from-your-mac/</guid>
+      <description>
+
+&lt;p&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;/images/post/2013-05-28-uninstall-bluestacks-from-your-mac/bluestacks-uninstall.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;bluestacks:17e7babec975c6caa5e4f3d2cc18144c&#34;&gt;BlueStacks:&lt;/h3&gt;
+
+&lt;p&gt;For some reverse engineering needs, i installed a full featured android environement called &lt;strong&gt;BlueStacks&lt;/strong&gt;. I decided to remove after playing with it a couple of hours. I crawled the web and found no up-to-date way of removing it. BlueStacks is a pretty intrusive app.
+After browsing deep into &lt;code&gt;~/Library&lt;/code&gt; I found out how.&lt;/p&gt;
+
+&lt;h3 id=&#34;here-is-how:17e7babec975c6caa5e4f3d2cc18144c&#34;&gt;Here is how:&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Open a terminal&lt;/li&gt;
+&lt;li&gt;go to &lt;code&gt;cd ~/Library/BlueStacks App Player/Uninstall/Clear BlueStacks User Data.app/Contents/MacOS&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;then run &lt;code&gt;sh uHD-ClearUserData&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;hit &lt;code&gt;Delete&lt;/code&gt; in the confirm popup&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You&amp;rsquo;re all set now.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Revamping the blog...done</title>
+      <link>/post/revamping-the-blog-done/</link>
+      <pubDate>Mon, 27 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/post/revamping-the-blog-done/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/2013-05-27-revamping-the-blog-done/h4md1-responsive-design.png&#34; alt=&#34;revamping the blog with Node.JS&#34; title=&#34;NodeJS&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I am done revamping the blog with &lt;a href=&#34;https://github.com/rgrove/lectroid&#34;&gt;&lt;strong&gt;Lectroid&lt;/strong&gt;&lt;/a&gt; . This blog engine offers all the basic features you may need. It is curently hosted on &lt;a href=&#34;https://www.nodejitsu.com&#34;&gt;&lt;strong&gt;NodeJitsu&lt;/strong&gt;&lt;/a&gt; with the cheapest plan. Frontend design is fully responsive and made with &lt;a href=&#34;http://twitter.github.io/bootstrap/&#34;&gt;&lt;strong&gt;Twitter Bootstrap&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;So tell me what&amp;rsquo;s your opinion about the new setup.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Revamping the blog...in progress</title>
+      <link>/post/revamping-the-blog-in-progess/</link>
+      <pubDate>Sat, 06 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/post/revamping-the-blog-in-progess/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/revamping-blog.jpg&#34; alt=&#34;revamping the blog with Node.JS&#34; title=&#34;NodeJS&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;From now on this blog will be held in english only. Despite I am not a native english speaker, I feel more easier writing in Shakespeare language. I writing this post to announce the upcoming blob revamp.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The blog is currently running WordPress with a full LAMP stack on one my own dedicated server. That totally an overkill setup. Moreover WordPress is fatnessing day after day. I only need to run a personal blog system, not a whole CMS engine.&lt;/p&gt;
+
+&lt;p&gt;My choice went to a light NodeJS based blog engine, that does only why I need. It is called &lt;a href=&#34;https://github.com/rgrove/lectroid&#34;&gt;&lt;strong&gt;Lectroid&lt;/strong&gt;&lt;/a&gt;, it doesn’t require database, posts are stored in markdown.&lt;/p&gt;
+
+&lt;p&gt;I also decided to completely lighten the dev process and wanted to give PaaS a try. I played a couple of days with several ones and chose &lt;a href=&#34;https://pagodabox.com/&#34;&gt;&lt;strong&gt;Pagodabox&lt;/strong&gt;&lt;/a&gt;, which meets my needs. I will use &lt;a href=&#34;https://c9.io/&#34;&gt;&lt;strong&gt;Cloud9 IDE&lt;/strong&gt;&lt;/a&gt; and Git for versioning and deploying to Pagodabox. I’ll keep you all updated.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>L’import RSS natif d’eZ Publish avec support de la balise enclosure</title>
+      <link>/post/import-rss-natif-ez-publish-support-balise-enclosure/</link>
+      <pubDate>Fri, 20 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/post/import-rss-natif-ez-publish-support-balise-enclosure/</guid>
+      <description>
+
+&lt;p&gt;&lt;img class=&#34;thumbnail pull-left&#34; src=&#34;/images/post/ezpublish_media_import_rss-150x150.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;le-besoin:9c6f926ca04ed334e17e208e483449a0&#34;&gt;Le besoin&lt;/h3&gt;
+
+&lt;p&gt;eZ publish offre la possibilité sans écrire une seule ligne de code, d’importer des contenus d’un flux RSS, sous forme de contenus eZpublish. Mais cette fonctionnalité native ne permet pas d’importer les média inclus dans la balise &lt;code&gt;&amp;lt;enclosure&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Je vais donc vous montrer comme vous permettre de récupérer ce media (image ou autre fichier tel que pdf, doc ou flv) et de l’insérer de manière transparente dans vos contenus eZ Publish.
+Cette fonctionnalité est un peu codé en dur dans eZ Publish et n’est pas extensible proprement. Je vais vous la manière &lt;em&gt;Quick and dirty&lt;/em&gt; pour arriver à vos fin. A vous ensuite de choisir si vous voulez passer du temp à faire cela proprement.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;enclosure url=&amp;quot;http://www.example.com/images/voiture.jpg&amp;quot; length=&amp;quot;&amp;quot; type=&amp;quot;image/jpeg&amp;quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;implémentation-quick-and-dirty:9c6f926ca04ed334e17e208e483449a0&#34;&gt;Implémentation quick and dirty&lt;/h3&gt;
+
+&lt;p&gt;Voici les fichiers qui seront impacter par nos modifications. Ce sont des fichiers du noyau eZPublish&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;La fonction &lt;code&gt;setObjectAttributeValue()&lt;/code&gt; dans le fichier &lt;code&gt;cronjobs/rssimport.php&lt;/code&gt; (script php apellé par crond pour aller récupérer les nouveaux items des flux RSS configurés en Back Office)&lt;/li&gt;
+&lt;li&gt;La methode &lt;code&gt;rssFieldDefinition()&lt;/code&gt; dans le fichier &lt;code&gt;kernel/classes/ezrssimport.php&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La fonction &lt;code&gt;setObjectAttributeValue()&lt;/code&gt; permet de traiter la récupération des différents types d’attributs (ligne de texte, bloc xml), c’est donc ici que nous allons naturellement ajouter le traitement de notre attribut ezimage (cela fonctionne aussi avec ezfile). Nous allons rajouter le &lt;code&gt;case ‘ezimage’&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function setObjectAttributeValue( $objectAttribute, $value )
+{
+    //…
+    switch( $dataType )
+    {
+        //…
+        case ‘ezimage’:
+        {
+            $file = pathinfo($value);
+            $image = eZHTTPTool::getDataByURL( $value );
+            if($image !== false)
+            {
+                $fp = fopen(‘/tmp/’.$file[‘basename’],‘wb’);
+                fwrite($fp, $image, strlen($image));
+                fclose($fp);
+                $objectAttribute-&amp;gt;fromString( ‘/tmp/’.$file[‘basename’] );
+            }
+        } break;
+        //..
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Après s’être occupé d’apprendre à &lt;strong&gt;eZ Publish&lt;/strong&gt; comment traiter les ezimage. Nous allons maintenant ajouter &lt;code&gt;Item – Enclosure – Url&lt;/code&gt; dans le &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; (voir image plus haut). Occupons nous de la méthode &lt;code&gt;rssFieldDefinition()&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;case ’2.0′:
+case ’0.91′:
+case ’0.92′:
+{
+  return array( ‘item’ =&amp;gt; array( ‘elements’ =&amp;gt; array( ‘title’,
+                                                      ‘link’,
+                                                      ‘description’,
+                                                      ‘author’,
+                                                      ‘category’,
+                                                      ‘comments’,
+                                                      ‘guid’,
+                                                      ‘pubDate’,
+                                                      ‘enclosure’ =&amp;gt; array( ‘attributes’ =&amp;gt; array( ‘url’ ) ) ) ),
+                ‘channel’ =&amp;gt; array( ‘elements’ =&amp;gt; array( ‘title’,
+                                                         ‘link’,
+                                                         ‘description’,
+                                                         ‘copyright’,
+                                                         ‘managingEditor’,
+                                                         ‘webMaster’,
+                                                         ‘pubDate’,
+                                                         ‘lastBuildDate’,
+                                                         ‘category’,
+                                                         ‘generator’,
+                                                         ‘docs’,
+                                                         ‘cloud’,
+                                                         ‘ttl’ ) ) );
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;implémentation-plus-propre:9c6f926ca04ed334e17e208e483449a0&#34;&gt;Implémentation plus propre&lt;/h3&gt;
+
+&lt;p&gt;Au lieu de modifier le cron &lt;code&gt;rssimport.php&lt;/code&gt; vous pouvez le copier dans votre extension y apporter les modifications pour le ezimage. Et appeler ce dernier au lieu du &lt;code&gt;rssimport.php&lt;/code&gt; par défaut d’eZ Publish.
+La méthode &lt;code&gt;rssFieldDefinition()&lt;/code&gt; est utilisé dans une autre méthode de la même classe, on remarque la présence d’un hook qui permet d’étendre sa définition a partir des classes présentes dans nos extensions custom.
+Voici le hook qui est dans la méthode &lt;code&gt;fieldMap()&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$fieldDefinition = eZRSSImport::rssFieldDefinition();
+
+$ini = eZINI::instance();
+foreach( $ini-&amp;gt;variable( ‘RSSSettings’, ‘ActiveExtensions’ ) as $activeExtension )
+{
+    if ( file_exists( eZExtension::baseDirectory() . ‘/’ . $activeExtension . ‘/rss/’ . $activeExtension . ‘rssimport.php’ ) )
+    {
+        include_once( eZExtension::baseDirectory() . ‘/’ . $activeExtension . ‘/rss/’ . $activeExtension . ‘rssimport.php’ );
+        $fieldDefinition = eZRSSImport::arrayMergeRecursive( $fieldDefinition, call_user_func( array(  $activeExtension . ‘rssimport’, ‘rssFieldDefinition’ ), array() ) );
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Il nous suffit donc de créer une classe dans &lt;code&gt;extension/monextension/rss/ezrssimage.php&lt;/code&gt; avec ce code, avec une methode du même nom: &lt;code&gt;rssFieldDefinition()&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class ezrssimagerssimport
+{
+    static function rssFieldDefinition()
+    {
+        return array( ‘item’ =&amp;gt; array( ‘elements’ =&amp;gt; array( ‘enclosure’ =&amp;gt; array( ‘attributes’ =&amp;gt; array( ‘url’ ) ) ) ) );
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;et de déclarer cette classe dans le fichier &lt;code&gt;monextension/settings/site.ini.append.php&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[RSSSettings]
+ActiveExtensions[]=ezrssimage
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Voila pour ce tutoriel. Si je trouve le temps je packagerai cela dans une extension que je publierai sur &lt;strong&gt;GitHub&lt;/strong&gt; ou &lt;strong&gt;projects.ez.no&lt;/strong&gt; (sauf si quelqu&amp;rsquo;un me devance d’ici là).
+N’hésitez pas à me signaler des erreurs ou améliorations que vous jugerez utiles.&lt;/p&gt;
+
+&lt;p&gt;Vous pouvez retrouver les snippets PHP précédent ici &lt;a href=&#34;https://gist.github.com/killerwolf/5430167&#34;&gt;https://gist.github.com/killerwolf/5430167&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Filtre custom ImageMagick pour eZ Publish</title>
+      <link>/post/filtre-custom-imagemagick-pour-ez-publish/</link>
+      <pubDate>Wed, 13 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/post/filtre-custom-imagemagick-pour-ez-publish/</guid>
+      <description>&lt;p&gt;Les filtres par défaut d’&lt;strong&gt;eZ Publish&lt;/strong&gt;, ne vous permettent pas de rogner les images pour les faire entrer dans des dimensions précises. Le fichier de conf &lt;code&gt;image.ini&lt;/code&gt; vous permet d’implémenter sous &lt;strong&gt;eZ Publish&lt;/strong&gt; toutes les possibilités offertes par les outils CLI d’&lt;strong&gt;ImageMagick&lt;/strong&gt;. Voici 2 filtres qui effectuent la même tâche mais avec 2 manières différentes: rogner et redimensionner les images, libre à vous de les utiliser avec vos Alias&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Filters[]=geometry/thumbnailize=-thumbnail &amp;quot;%1x%2^&amp;quot; -gravity center -extent %1x%2
+Filters[]=geometry/thumbnailize2=-geometry %1x%2^ -gravity center -crop %1x%2+0+0 +repage
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mon premier widget UWA netvibes / iGoogle</title>
+      <link>/post/mon-premier-widget-uwa-netvibes-igoogle/</link>
+      <pubDate>Sun, 18 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/post/mon-premier-widget-uwa-netvibes-igoogle/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/netvibes.jpg&#34; alt=&#34;NetVibes iGoogle Widget&#34; title=&#34;NetVibes iGoogle Widget&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;A la base, le projet etait prévu pour mon tag:tag NabKiller, but i wanted to mess with the netvibes UWA. Ce widget affiche les horaires de diffusion des séries que je regarde régulièrement.&lt;/p&gt;
+
+&lt;p&gt;Aimant beaucoup les mashups, je me suis pas amusé à lister toutes les séries qui existent. j’ai donc utilisé pour cela un services proposé par TVRage. Une fois votre compte créé sur TVRage et vos séries préférées ajoutées a votre compte, TVRage vous met à disposition un “Personalized RSS Feed” des séries difusées pendant la semaine en cours.&lt;/p&gt;
+
+&lt;p&gt;Voici le mien:
+&lt;a href=&#34;http://www.tvrage.com/myweekrss.php?tid=32948&amp;amp;hash=a60a8c06b3fd2afda135e2a42ab88a7e&#34;&gt;http://www.tvrage.com/myweekrss.php?tid=32948&amp;amp;hash=a60a8c06b3fd2afda135e2a42ab88a7e&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Comme vous pouvez le voir, le flux est très sale, on peut pas le manipuler aisément , les items sont hétérogènes. Donc ce fut assez laborieux pour agréger ce flux et lui donner l’apparence que j’ai voulu.&lt;/p&gt;
+
+&lt;p&gt;Voulant allez le plus rapidement possible pour voir mon widget fonctionner, j’ai écrit une petite API en PHP5 qui agrège ce flux et ordonne correctement les données. Il est aussi possible de se servir du parser UWA/JS fourni par netvibes, et c’est une meilleur solution. car actuellement le widget est dépendant le l’api que j’ai écrite et qui est hostée sur un de mes sites, mais qu’importe, je compte pas diffuser mon widget pour le moment, la solution PHP me convient.&lt;/p&gt;
+
+&lt;p&gt;Le widget prend 3 paramètres, le &lt;code&gt;tid&lt;/code&gt; et le &lt;code&gt;hash&lt;/code&gt; que vous trouvez dans l’url de votre flux personnalisé, et le troisiéme qui est l’adresse de mon API.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/images/post/netvibes-param.jpg&#34; alt=&#34;NetVibes iGoogle Widget&#34; title=&#34;NetVibes iGoogle Widget&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A homemade sensorbar pour Wii</title>
+      <link>/post/a-homemade-sensorbar-pour-wii/</link>
+      <pubDate>Sun, 21 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/post/a-homemade-sensorbar-pour-wii/</guid>
+      <description>&lt;p&gt;Si vous avez un quelconque soucis avec votre sensor bar, pas de panique, aucune raison d’en racheter une. Vous pouvez en bricoler une pour 3 fois rien. Voilà un test réalisé par votre serviteur et un de ses acolytes dénommé Biggest.&lt;/p&gt;
+
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe width=&#34;735&#34; height=&#34;413&#34; src=&#34;http://www.youtube.com/embed/QkZTe3dzo_I&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GreaseMonkey or how to enhance you web experience</title>
+      <link>/post/greasemonkey-or-how-to-enhance-your-web-experience/</link>
+      <pubDate>Sun, 21 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/post/greasemonkey-or-how-to-enhance-your-web-experience/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;/images/post/greasemonkey.gif&#34; /&gt;
+&lt;a href=&#34;https://addons.mozilla.org/fr/firefox/addon/748&#34;&gt;GreaseMonkey&lt;/a&gt; est une extension pour Firefox, elle vous permet de prendre le controle du web. Vous trouvez tel site intéressent malgré le faite qu’il soit infesté de pub. Grace a GreaseMonkey et a un petit script de quelque ligne, le rendu visuel de votre site préféré sera modifié selon votre désir.&lt;/p&gt;
+
+&lt;p&gt;Pour illustrer mon propos, j’ai écris à chaud le script JS ci-dessous, il supprime “Les Liens sponorisés” qui peuvent apparaitre lors de vos recherche sur Google. La connaissance du Javascript est biensur indispensable, mais aussi du Dom et/ou XPath .&lt;/p&gt;
+
+&lt;p&gt;Je vous ai convaicu d’écrire vos propres scripts , pensez à partagez les partager sur &lt;a href=&#34;http://userscripts.org/&#34;&gt;UserScripts.org&lt;/a&gt; si vous pensez qu’il peuvent être utiles à d’autre. &lt;a href=&#34;http://userscripts.org/scripts/show/38984&#34;&gt;Mon Google Sponsored Links remover&lt;/a&gt; est disponible sur UserScripts et est disposé à toute critique de votre part.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// ==UserScript==
+// @name           Google Sponsored Links remover
+// @namespace      http://www.laadhari.fr
+// @description    remove google sponsored links from SERPS
+// @include        http://www.google.com/*
+// ==/UserScript==
+
+(function() {
+  var sidebarads = document.getElementById(‘mbEnd’);
+  var skyads = document.getElementById(‘tads’);
+  if (sidebarads) {
+    sidebarads.parentNode.removeChild(sidebarads);
+    }
+  if (skyads) {
+    skyads.parentNode.removeChild(skyads);
+    }  
+  }
+)();
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Premier essai avec l’API de mon nabkiller</title>
+      <link>/post/premier-essai-avec-api-nabkiller/</link>
+      <pubDate>Fri, 12 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/post/premier-essai-avec-api-nabkiller/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;/images/post/nabkiller.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;J’ai récemment fait l’acquisition il y a une semaine d’un Nabaztag:tag, voir le site officiel si vous ne savez pas ce que c’est.
+Violet, le fabricant du Nabaztag:tag fournit une API avec son lapin. On peut interagir avec son propre lapin, lui faire faire plein de chose.
+Mon idée était de pouvoir faire faire lire les messages qu’on m’écrivait sur MSN par mon lapin, quand je met met en statut “AFK” (c-a-d Away from keyboard pour les non geek), je pourrais entendre les messages de mes amis quand je ne suis pas derrière mon écran pour les lire.
+Le lapin a une fonctionnalité Text To Speech, on lui envoie un texte par l’intermédiaire de l’API, et il les lit dès réception.&lt;/p&gt;
+
+&lt;p&gt;Dernière étape: faire en sorte que MSN puisse déclencher certaines actions de l’API en fonctions de certains de ses événements interne. Et c’est la que Messenger plus live trouve son utilité. Tout le monde connait cet addon de MSN, mais ses possiblité de scripting ne sont pas connu de tous, c’est qu’on a la possibilité d’exécuter nos propres commandes grâce à l’environnement Javascript embarqué dans Mesenger plus live. En plus des Événements basique de MSN, cet addon implémente toutes une séries d’évènements très utile, il suffit donc d’implémenter les fonctions-évènements qui nous intéressent dans notre script JS.
+Voici la documentation fourni par Mesenger.
+Ci-dessous une courte vidéo montrant mes premier tests effectué avec mon NabKiller (c’est le nom que j’ai donné à mon lapin).&lt;/p&gt;
+
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/4BKnJzcEGio?rel=0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Idée que je vais surement développer avec mon lapin:
+Mon Nabkiller me préviendra dès qu’un nouvelle épisode des séries que je regarde est publié, et il me dira si les sous-titres de ce même épisode sont disponibles, à défault il me préviendra dès que ce sera le cas
+Doter mon lapin d’une intelligence artificiel, avec un bot pandorabot par exemple. Pour exemple voici &lt;a href=&#34;http://sycophante.vhost.pandorabots.com/pandora/talk-oddcast?botid=a77514392e359d3d&#34;&gt;Voldo&lt;/a&gt; un bot doté d’un IA.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Les noms de domaines</title>
+      <link>/post/les-noms-de-domaines/</link>
+      <pubDate>Thu, 21 Feb 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/post/les-noms-de-domaines/</guid>
+      <description>&lt;p&gt;Je suis toujours à l’affût quand il s’agit d’acquérir un nouveau nom de domaine, j’essaye de trouver des niches, des domaines peu ou pas exploités, et des noms de domaines qui peuvent être associés. L’idée ou le nom de domaine peuvent me venir à l’esprit à n’importe quel moment de la journée, dans la douche, pendant le déjeuner, ou juste avant de m’endormir. Alors je regarde s’il est disponible ou pas. Si oui, il y a de forte chance que je l’achète tout de suite, ou du moins je le note quelque part pour ne pas oublier d’y repenser avec du recul. S’il est toujours libre aujourd’hui il y a de forte chance qu’il le soit encore dans quelques jours. Il faut tout de même faire gaffe car j’ai vu quelques noms de domaine très bon m’échapper de cette manière.
+Il existe de nombreux outils, services web qui permettent de gérer, surveiller vos propres noms de domaines ou ceux que vous convoitez. J’en parlerai dans un prochain billet et je parlerai aussi de la fulltitude de noms de domaines que je possède, et pour lesquels j’ai des projets….durs a réaliser si on en a pas le temps.
+Tchuss tout le monde.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Come back</title>
+      <link>/post/come-back/</link>
+      <pubDate>Wed, 20 Feb 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/post/come-back/</guid>
+      <description>&lt;p&gt;J’ai décidé de reprendre la mise à jour de mon blog après 6 mois de non activité. Profitant de cette semaine de vacances pour m’y consacrer un peu.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thermodynamique mystique</title>
+      <link>/post/thermodynamique-mystique/</link>
+      <pubDate>Mon, 11 Feb 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/post/thermodynamique-mystique/</guid>
+      <description>&lt;p&gt;Je reçois ces mails, trop pas sollicités de la part de mes amis, des chaines qui te persuade de forwarder pour la bonne cause et des trucs dans le genre. Mais de rares fois, on tombe sur quelque chose d’intéressant. C’est le cas de ce mail reçu il y a quelques jour. ENJOY.&lt;/p&gt;
+
+&lt;p&gt;Ci dessous est la version d’une soi-disant question de chimie donnée à l’université de Montpellier. La réponse d’un étudiant a été si profonde que le professeur l’a partagé avec ses collègues, via internet, et c’est
+pourquoi nous avons le plaisir de la lire.&lt;/p&gt;
+
+&lt;p&gt;Question bonus: L’enfer est il exothermique (évacue de la chaleur) ou endothermique ( absorbe de la chaleur) ? La plupart des étudiants ont exprimé leur croyance en utilisant la loi de Boyle (si un gaz se dilate il se refroidit et inversement) ou ses variantes. Cependant un étudiant eut la réponse suivante:&lt;/p&gt;
+
+&lt;p&gt;Premièrement, nous avons besoin de connaître comment varie la masse de l’enfer avec le temps. Nous avons donc besoin de connaître à quel taux les âmes entrent et sortent de l’enfer. Je pense que nous pouvons sans risque assumer qu’une fois entrée en enfer, l’âme n’y ressortira plus. Du coup, aucune âme ne sort. De même pour le calcul du nombre d’entrée des âmes en enfer, nous devons regarder le fonctionnement des différentes religions qui existent de par le monde aujourd’hui. La plupart de ces religions affirment que si vous n’êtes pas un membre de leur religion alors vous irez en enfer.
+Comme il existe plus d’une religion exprimant cette règle et comme les gens n’appartiennent pas a plus d’une religion, nous pouvons projeter que toutes les âmes vont en enfer. Maintenant regardons la vitesse de changement de volume de l’enfer parce que la loi de Boyle spécifie que pour que la pression et la température reste identique en enfer, le volume de l’enfer doit se dilater proportionnellement à l’entrée des âmes.&lt;/p&gt;
+
+&lt;p&gt;Cela donne deux possibilités :
+1 Si l’enfer se dilate à une vitesse moindre que l’entrée des âmes en enfer, alors la température et la pression en enfer augmenteront indéfiniment jusqu’à ce que l’enfer éclate. 2 Si l’enfer se dilate à une vitesse supérieure à la vitesse d’entrée des âmes en enfer, alors la température diminuera jusqu’à ce que l’enfer gèle.&lt;/p&gt;
+
+&lt;p&gt;Laquelle choisir ?&lt;/p&gt;
+
+&lt;p&gt;Si nous acceptons le postulat que Teresa m’a répondu durant ma première année d’étudiant “qu’ il fera froid en enfer avant que je couche avec toi” et e tenant compte du fait que j’ai couché avec elle la nuit dernière
+alors l’hypothèse doit être vrai et alors je suis sûr que l’enfer est exothermique et a déjà gelé. Le corollaire de cette théorie c’est que comme l’enfer a déjà gelé, il s’en suit qu’il n’accepte plus aucune âme et du coup qu’il n’existe plus… Laissant ainsi seul le paradis, ainsi prouvant l’existence
+d’un être divin ce qui explique pourquoi, la nuit dernière, Teresa n’arrêtait pas de crier ” oh mon dieu”&lt;/p&gt;
+
+&lt;p&gt;C’EST LE SEUL ETUDIANT A AVOIR RECU LA NOTE 20&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

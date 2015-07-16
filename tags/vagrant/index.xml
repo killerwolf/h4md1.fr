@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vagrant on Geeky Ramblings</title>
+    <link>/tags/vagrant/</link>
+    <description>Recent content in Vagrant on Geeky Ramblings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Supercharge your developement VMs with vagrant and ansible</title>
+      <link>/post/leverage-your-dev-boxes-with-vagrant-and-ansible/</link>
+      <pubDate>Wed, 30 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/leverage-your-dev-boxes-with-vagrant-and-ansible/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;/images/post/vagrant-lamp-ansible.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vagrant is defacto standard when it comes to managing your developement machines. It allows you to spin a multi-VM developement environement in a second.
+For more details&amp;hellip;.&lt;a href=&#34;http://www.vagrantup.com&#34;&gt;VagrantUP&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Vagrant isn&amp;rsquo;t a provisioning tool, but leverage the existing one, such as &lt;a href=&#34;http://puppetlabs.com&#34;&gt;puppet&lt;/a&gt; and &lt;a href=&#34;http://www.ansible.com&#34;&gt;ansible&lt;/a&gt;. Ansible is the new one in the playground. The learning curve is pretty steep, you only write your playbook in YAML, and it is devOps friendly.
+Give it a try and clone my example project &lt;a href=&#34;https://github.com/killerwolf/vagrant-lamp-ansible&#34;&gt;vagrant lamp ansible&lt;/a&gt; and get started.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

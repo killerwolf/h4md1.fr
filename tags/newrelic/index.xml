@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Newrelic on Geeky Ramblings</title>
+    <link>/tags/newrelic/</link>
+    <description>Recent content in Newrelic on Geeky Ramblings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Oct 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/newrelic/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Name eZ Publish web transaction in New Relic</title>
+      <link>/post/name-ezpublish-web-transaction-in-ezpublish/</link>
+      <pubDate>Sat, 05 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/post/name-ezpublish-web-transaction-in-ezpublish/</guid>
+      <description>&lt;p&gt;&lt;img class=&#34;thumbnail text-center&#34; src=&#34;/images/post/2013-10/newrelic_transaction.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When using &lt;strong&gt;NewRelic PHP agent&lt;/strong&gt; with an eZ Publish stack. the profiled transactions will show under &lt;code&gt;/index.php&lt;/code&gt;. To get better insights of what makes your app struggle.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;NewRelic&lt;/strong&gt; provides a self explanatory &lt;a href=&#34;https://docs.newrelic.com/docs/php/the-php-api&#34;&gt;&lt;strong&gt;PHP API&lt;/strong&gt;&lt;/a&gt;. This API lets you send additional metrics/data along by the ones the agent already gathers.&lt;/p&gt;
+
+&lt;p&gt;The eZ Publish extension &lt;a href=&#34;https://github.com/killerwolf/ezpublish-newrelic&#34;&gt;&lt;strong&gt;ezpublish-newrelic&lt;/strong&gt;&lt;/a&gt; I wrote allows you to track modules and theires views under a separate transaction name.&lt;/p&gt;
+
+&lt;p&gt;Code source is hosted on &lt;a href=&#34;https://github.com/killerwolf/ezpublish-newrelic&#34;&gt;GitHub&lt;/a&gt; and is available for install on &lt;a href=&#34;https://packagist.org/packages/killerwolf/ezpublish-newrelic&#34;&gt;&lt;strong&gt;Packagist&lt;/strong&gt;&lt;/a&gt; via &lt;strong&gt;Composer&lt;/strong&gt;, feel free to contribute.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
