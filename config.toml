@@ -1,2 +1,15 @@
 languageCode = "en-us"
-title = "h4md1.fr"
+title = "Geeky Ramblings"
+
+theme = "purehugo"
+Paginate = 10
+disqusShortname = "h4md1"
+
+[params]
+  twitterName = "killerwolf"
+  githubName = "killerwolf"
+  description = "of a Web Developper"
+  google_analytics = "UA-xxxxxx-xx"
+
+[permalink]
+  post = "/:year/:month/:title/"
