@@ -5,6 +5,7 @@ date: 2007-07-15
 
 Il y a peine quelques jour j’ai mis la main sur 3 noms de domaines, ou plus exactement sur 1 nom de domaine avec 3 extensions différentes. Les voila `lolr.fr` `lolr.net` `lolr.org`. il est très enervant de voir le .com déjà déposé, et encore plus si ce dernier n’est pas du tout exploité par son propriétaire. Le .com est enregistré depuis 1997 jusqu’en 2012, son propriétaire a probablement oublié qu’il l’a deposé, ca arrive malheureusement souvent.
 <!--more-->
+
 <img class="thumbnail pull-left" src="/images/post/flickr.png" />
 **LOL** signifie ‘laugh out loud’ ‘mort de rire’, donc un site d’humour, de videos drôles, images et news insolites serait totalement légitime. Et le R ? Que signifie t’il ? Avrai dire je ne le sais même pas moi même. On voit assez souvent un R trainait sur des nom de sites assez connu et très web 2.0, par exemple le célèbre flickr: service social de partage d’images, mais aussi TheFeedR: Un blog colaboratif traitant de l’actualité du web et des nouvelles technologies.
 

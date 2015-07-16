@@ -6,7 +6,8 @@ tags:
 - php5
 ---
 <img class="thumbnail pull-left" src="/images/post/ezpublish_media_import_rss-150x150.jpg" />
-###Le besoin###
+
+### Le besoin
 eZ publish offre la possibilité sans écrire une seule ligne de code, d’importer des contenus d’un flux RSS, sous forme de contenus eZpublish. Mais cette fonctionnalité native ne permet pas d’importer les média inclus dans la balise `<enclosure>`
 
 Je vais donc vous montrer comme vous permettre de récupérer ce media (image ou autre fichier tel que pdf, doc ou flv) et de l’insérer de manière transparente dans vos contenus eZ Publish.
@@ -14,7 +15,7 @@ Cette fonctionnalité est un peu codé en dur dans eZ Publish et n’est pas ext
 
     <enclosure url="http://www.example.com/images/voiture.jpg" length="" type="image/jpeg"/>
 
-###Implémentation quick and dirty###
+### Implémentation quick and dirty
 Voici les fichiers qui seront impacter par nos modifications. Ce sont des fichiers du noyau eZPublish
 
 * La fonction `setObjectAttributeValue()` dans le fichier `cronjobs/rssimport.php` (script php apellé par crond pour aller récupérer les nouveaux items des flux RSS configurés en Back Office)
@@ -74,7 +75,7 @@ Après s’être occupé d’apprendre à **eZ Publish** comment traiter les ezi
                                                              ‘ttl’ ) ) );
     }
 
-###Implémentation plus propre###
+### Implémentation plus propre
 Au lieu de modifier le cron `rssimport.php` vous pouvez le copier dans votre extension y apporter les modifications pour le ezimage. Et appeler ce dernier au lieu du `rssimport.php` par défaut d’eZ Publish.
 La méthode `rssFieldDefinition()` est utilisé dans une autre méthode de la même classe, on remarque la présence d’un hook qui permet d’étendre sa définition a partir des classes présentes dans nos extensions custom.
 Voici le hook qui est dans la méthode `fieldMap()`

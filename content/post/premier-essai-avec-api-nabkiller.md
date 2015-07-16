@@ -9,7 +9,8 @@ tags:
 - violet
 - windows live messenger
 ---
-<img class="thumbnail pull-left" src="/images/post/nabkiller.jpg" />
+<img class="thumbnail" src="/images/post/nabkiller.jpg" />
+
 J’ai récemment fait l’acquisition il y a une semaine d’un Nabaztag:tag, voir le site officiel si vous ne savez pas ce que c’est.
 Violet, le fabricant du Nabaztag:tag fournit une API avec son lapin. On peut interagir avec son propre lapin, lui faire faire plein de chose.
 Mon idée était de pouvoir faire faire lire les messages qu’on m’écrivait sur MSN par mon lapin, quand je met met en statut “AFK” (c-a-d Away from keyboard pour les non geek), je pourrais entendre les messages de mes amis quand je ne suis pas derrière mon écran pour les lire.
@@ -20,7 +21,7 @@ Voici la documentation fourni par Mesenger.
 Ci-dessous une courte vidéo montrant mes premier tests effectué avec mon NabKiller (c’est le nom que j’ai donné à mon lapin).
 
 <div class="video-wrapper">
-    <iframe width="735" height="413" src="http://www.youtube.com/embed/4BKnJzcEGio" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4BKnJzcEGio?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
 Idée que je vais surement développer avec mon lapin:
