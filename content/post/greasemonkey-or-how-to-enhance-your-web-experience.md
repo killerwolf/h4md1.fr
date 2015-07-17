@@ -13,21 +13,23 @@ Pour illustrer mon propos, j’ai écris à chaud le script JS ci-dessous, il su
 
 Je vous ai convaicu d’écrire vos propres scripts , pensez à partagez les partager sur [UserScripts.org](http://userscripts.org/) si vous pensez qu’il peuvent être utiles à d’autre. [Mon Google Sponsored Links remover](http://userscripts.org/scripts/show/38984) est disponible sur UserScripts et est disposé à toute critique de votre part.
 
-    // ==UserScript==
-    // @name           Google Sponsored Links remover
-    // @namespace      http://www.laadhari.fr
-    // @description    remove google sponsored links from SERPS
-    // @include        http://www.google.com/*
-    // ==/UserScript==
-     
-    (function() {
-      var sidebarads = document.getElementById(‘mbEnd’);
-      var skyads = document.getElementById(‘tads’);
-      if (sidebarads) {
-        sidebarads.parentNode.removeChild(sidebarads);
-        }
-      if (skyads) {
-        skyads.parentNode.removeChild(skyads);
-        }  
-      }
-    )();
+```javascript
+// ==UserScript==
+// @name           Google Sponsored Links remover
+// @namespace      http://www.laadhari.fr
+// @description    remove google sponsored links from SERPS
+// @include        http://www.google.com/*
+// ==/UserScript==
+ 
+(function() {
+  var sidebarads = document.getElementById(‘mbEnd’);
+  var skyads = document.getElementById(‘tads’);
+  if (sidebarads) {
+    sidebarads.parentNode.removeChild(sidebarads);
+    }
+  if (skyads) {
+    skyads.parentNode.removeChild(skyads);
+    }  
+  }
+)();
+```
