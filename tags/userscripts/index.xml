@@ -22,13 +22,13 @@
 
 &lt;p&gt;Je vous ai convaicu d’écrire vos propres scripts , pensez à partagez les partager sur &lt;a href=&#34;http://userscripts.org/&#34;&gt;UserScripts.org&lt;/a&gt; si vous pensez qu’il peuvent être utiles à d’autre. &lt;a href=&#34;http://userscripts.org/scripts/show/38984&#34;&gt;Mon Google Sponsored Links remover&lt;/a&gt; est disponible sur UserScripts et est disposé à toute critique de votre part.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;// ==UserScript==
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;// ==UserScript==
 // @name           Google Sponsored Links remover
 // @namespace      http://www.laadhari.fr
 // @description    remove google sponsored links from SERPS
 // @include        http://www.google.com/*
 // ==/UserScript==
-
+ 
 (function() {
   var sidebarads = document.getElementById(‘mbEnd’);
   var skyads = document.getElementById(‘tads’);

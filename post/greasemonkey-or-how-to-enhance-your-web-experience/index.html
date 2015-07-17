@@ -96,13 +96,13 @@
 
 <p>Je vous ai convaicu d’écrire vos propres scripts , pensez à partagez les partager sur <a href="http://userscripts.org/">UserScripts.org</a> si vous pensez qu’il peuvent être utiles à d’autre. <a href="http://userscripts.org/scripts/show/38984">Mon Google Sponsored Links remover</a> est disponible sur UserScripts et est disposé à toute critique de votre part.</p>
 
-<pre><code>// ==UserScript==
+<pre><code class="language-javascript">// ==UserScript==
 // @name           Google Sponsored Links remover
 // @namespace      http://www.laadhari.fr
 // @description    remove google sponsored links from SERPS
 // @include        http://www.google.com/*
 // ==/UserScript==
-
+ 
 (function() {
   var sidebarads = document.getElementById(‘mbEnd’);
   var skyads = document.getElementById(‘tads’);
