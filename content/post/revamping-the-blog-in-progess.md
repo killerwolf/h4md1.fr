@@ -8,10 +8,10 @@ tags:
 - nodejs
 - pagodabox
 ---
-![revamping the blog with Node.JS](/images/post/revamping-blog.jpg "NodeJS")
+{{% img-responsive "/images/post/revamping-blog.jpg" %}}
 
 **From now on this blog will be held in english only. Despite I am not a native english speaker, I feel more easier writing in Shakespeare language. I writing this post to announce the upcoming blob revamp.**
-
+<!--more-->
 The blog is currently running WordPress with a full LAMP stack on one my own dedicated server. That totally an overkill setup. Moreover WordPress is fatnessing day after day. I only need to run a personal blog system, not a whole CMS engine.
 
 My choice went to a light NodeJS based blog engine, that does only why I need. It is called [**Lectroid**](https://github.com/rgrove/lectroid), it doesn’t require database, posts are stored in markdown.

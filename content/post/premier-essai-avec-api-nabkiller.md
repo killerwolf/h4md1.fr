@@ -9,10 +9,11 @@ tags:
 - violet
 - windows live messenger
 ---
-<img class="thumbnail" src="/images/post/nabkiller.jpg" />
+{{% img-responsive "/images/post/nabkiller.jpg" %}}
 
 J’ai récemment fait l’acquisition il y a une semaine d’un Nabaztag:tag, voir le site officiel si vous ne savez pas ce que c’est.
 Violet, le fabricant du Nabaztag:tag fournit une API avec son lapin. On peut interagir avec son propre lapin, lui faire faire plein de chose.
+<!--more-->
 Mon idée était de pouvoir faire faire lire les messages qu’on m’écrivait sur MSN par mon lapin, quand je met met en statut “AFK” (c-a-d Away from keyboard pour les non geek), je pourrais entendre les messages de mes amis quand je ne suis pas derrière mon écran pour les lire.
 Le lapin a une fonctionnalité Text To Speech, on lui envoie un texte par l’intermédiaire de l’API, et il les lit dès réception.
 

@@ -6,9 +6,9 @@ tags:
 - greasemonkey
 - userscripts
 ---
-<img class="thumbnail" src="/images/post/greasemonkey.gif" />
+{{% img-responsive "/images/post/greasemonkey.gif" %}}
 [GreaseMonkey](https://addons.mozilla.org/fr/firefox/addon/748) est une extension pour Firefox, elle vous permet de prendre le controle du web. Vous trouvez tel site intéressent malgré le faite qu’il soit infesté de pub. Grace a GreaseMonkey et a un petit script de quelque ligne, le rendu visuel de votre site préféré sera modifié selon votre désir.
-
+<!--more-->
 Pour illustrer mon propos, j’ai écris à chaud le script JS ci-dessous, il supprime “Les Liens sponorisés” qui peuvent apparaitre lors de vos recherche sur Google. La connaissance du Javascript est biensur indispensable, mais aussi du Dom et/ou XPath .
 
 Je vous ai convaicu d’écrire vos propres scripts , pensez à partagez les partager sur [UserScripts.org](http://userscripts.org/) si vous pensez qu’il peuvent être utiles à d’autre. [Mon Google Sponsored Links remover](http://userscripts.org/scripts/show/38984) est disponible sur UserScripts et est disposé à toute critique de votre part.

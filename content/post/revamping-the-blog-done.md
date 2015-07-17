@@ -8,8 +8,8 @@ tags:
 - nodejs
 - nodejitsu
 ---
-![revamping the blog with Node.JS](/images/post/2013-05-27-revamping-the-blog-done/h4md1-responsive-design.png "NodeJS")
+{{% img-responsive "/images/post/2013-05-27-revamping-the-blog-done/h4md1-responsive-design.png" %}}
 
-I am done revamping the blog with [**Lectroid**](https://github.com/rgrove/lectroid) . This blog engine offers all the basic features you may need. It is curently hosted on [**NodeJitsu**](https://www.nodejitsu.com) with the cheapest plan. Frontend design is fully responsive and made with [**Twitter Bootstrap**](http://twitter.github.io/bootstrap/). 
+I am done revamping the blog with <!--more-->[**Lectroid**](https://github.com/rgrove/lectroid) . This blog engine offers all the basic features you may need. It is curently hosted on [**NodeJitsu**](https://www.nodejitsu.com) with the cheapest plan. Frontend design is fully responsive and made with [**Twitter Bootstrap**](http://twitter.github.io/bootstrap/). 
 
 So tell me what's your opinion about the new setup.

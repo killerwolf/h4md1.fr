@@ -9,10 +9,10 @@ tags:
 - widget
 ---
 
-![NetVibes iGoogle Widget](/images/post/netvibes.jpg "NetVibes iGoogle Widget")
+{{% img-responsive "/images/post/netvibes.jpg" %}}}
 
 A la base, le projet etait prévu pour mon tag:tag NabKiller, but i wanted to mess with the netvibes UWA. Ce widget affiche les horaires de diffusion des séries que je regarde régulièrement.
-
+<!--more-->
 Aimant beaucoup les mashups, je me suis pas amusé à lister toutes les séries qui existent. j’ai donc utilisé pour cela un services proposé par TVRage. Une fois votre compte créé sur TVRage et vos séries préférées ajoutées a votre compte, TVRage vous met à disposition un “Personalized RSS Feed” des séries difusées pendant la semaine en cours.
 
 Voici le mien:
@@ -24,4 +24,4 @@ Voulant allez le plus rapidement possible pour voir mon widget fonctionner, j’
 
 Le widget prend 3 paramètres, le `tid` et le `hash` que vous trouvez dans l’url de votre flux personnalisé, et le troisiéme qui est l’adresse de mon API.
 
-![NetVibes iGoogle Widget](/images/post/netvibes-param.jpg "NetVibes iGoogle Widget")
+{{% img-responsive "/images/post/netvibes-param.jpg" %}}
