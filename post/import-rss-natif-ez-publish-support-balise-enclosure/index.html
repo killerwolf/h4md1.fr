@@ -91,16 +91,12 @@
                     <div class="post-description">
                         
 
-<p><img class="thumbnail pull-left" src="/images/post/ezpublish_media_import_rss-150x150.jpg" /></p>
-
-<h3 id="le-besoin:9c6f926ca04ed334e17e208e483449a0">Le besoin</h3>
-
-<p>eZ publish offre la possibilité sans écrire une seule ligne de code, d’importer des contenus d’un flux RSS, sous forme de contenus eZpublish. Mais cette fonctionnalité native ne permet pas d’importer les média inclus dans la balise <code>&lt;enclosure&gt;</code></p>
+<p><img class="thumbnail pull-left" src="/images/post/ezpublish_media_import_rss-150x150.jpg" />eZ publish offre la possibilité sans écrire une seule ligne de code, d’importer des contenus d’un flux RSS, sous forme de contenus eZpublish. Mais cette fonctionnalité native ne permet pas d’importer les média inclus dans la balise <code>&lt;enclosure&gt;</code></p>
 
 <p>Je vais donc vous montrer comme vous permettre de récupérer ce media (image ou autre fichier tel que pdf, doc ou flv) et de l’insérer de manière transparente dans vos contenus eZ Publish.
 Cette fonctionnalité est un peu codé en dur dans eZ Publish et n’est pas extensible proprement. Je vais vous la manière <em>Quick and dirty</em> pour arriver à vos fin. A vous ensuite de choisir si vous voulez passer du temp à faire cela proprement.</p>
 
-<pre><code>&lt;enclosure url=&quot;http://www.example.com/images/voiture.jpg&quot; length=&quot;&quot; type=&quot;image/jpeg&quot;/&gt;
+<pre><code class="language-html">&lt;enclosure url=&quot;http://www.example.com/images/voiture.jpg&quot; length=&quot;&quot; type=&quot;image/jpeg&quot;/&gt;
 </code></pre>
 
 <h3 id="implémentation-quick-and-dirty:9c6f926ca04ed334e17e208e483449a0">Implémentation quick and dirty</h3>
@@ -114,7 +110,7 @@ Cette fonctionnalité est un peu codé en dur dans eZ Publish et n’est pas ext
 
 <p>La fonction <code>setObjectAttributeValue()</code> permet de traiter la récupération des différents types d’attributs (ligne de texte, bloc xml), c’est donc ici que nous allons naturellement ajouter le traitement de notre attribut ezimage (cela fonctionne aussi avec ezfile). Nous allons rajouter le <code>case ‘ezimage’</code></p>
 
-<pre><code>function setObjectAttributeValue( $objectAttribute, $value )
+<pre><code class="language-php">function setObjectAttributeValue( $objectAttribute, $value )
 {
     //…
     switch( $dataType )
@@ -139,7 +135,7 @@ Cette fonctionnalité est un peu codé en dur dans eZ Publish et n’est pas ext
 
 <p>Après s’être occupé d’apprendre à <strong>eZ Publish</strong> comment traiter les ezimage. Nous allons maintenant ajouter <code>Item – Enclosure – Url</code> dans le <code>&lt;select&gt;</code> (voir image plus haut). Occupons nous de la méthode <code>rssFieldDefinition()</code></p>
 
-<pre><code>case ’2.0′:
+<pre><code class="language-php">case ’2.0′:
 case ’0.91′:
 case ’0.92′:
 {
@@ -174,8 +170,8 @@ case ’0.92′:
 La méthode <code>rssFieldDefinition()</code> est utilisé dans une autre méthode de la même classe, on remarque la présence d’un hook qui permet d’étendre sa définition a partir des classes présentes dans nos extensions custom.
 Voici le hook qui est dans la méthode <code>fieldMap()</code></p>
 
-<pre><code>$fieldDefinition = eZRSSImport::rssFieldDefinition();
-
+<pre><code class="language-php">$fieldDefinition = eZRSSImport::rssFieldDefinition();
+ 
 $ini = eZINI::instance();
 foreach( $ini-&gt;variable( ‘RSSSettings’, ‘ActiveExtensions’ ) as $activeExtension )
 {
@@ -189,7 +185,7 @@ foreach( $ini-&gt;variable( ‘RSSSettings’, ‘ActiveExtensions’ ) as $acti
 
 <p>Il nous suffit donc de créer une classe dans <code>extension/monextension/rss/ezrssimage.php</code> avec ce code, avec une methode du même nom: <code>rssFieldDefinition()</code></p>
 
-<pre><code>class ezrssimagerssimport
+<pre><code class="language-php">class ezrssimagerssimport
 {
     static function rssFieldDefinition()
     {
@@ -200,7 +196,7 @@ foreach( $ini-&gt;variable( ‘RSSSettings’, ‘ActiveExtensions’ ) as $acti
 
 <p>et de déclarer cette classe dans le fichier <code>monextension/settings/site.ini.append.php</code>.</p>
 
-<pre><code>[RSSSettings]
+<pre><code class="language-ìni">[RSSSettings]
 ActiveExtensions[]=ezrssimage
 </code></pre>
 

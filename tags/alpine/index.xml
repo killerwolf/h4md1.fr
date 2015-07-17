@@ -15,8 +15,7 @@
       <pubDate>Sun, 21 Jun 2015 00:00:00 +0000</pubDate>
       
       <guid>/post/put-your-docker-images-on-a-diet/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/images/post/2015/Docker_container_engine_logo.png&#34; alt=&#34;image&#34; /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/2015/Docker_container_engine_logo.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;&lt;/p&gt;
 
 &lt;p&gt;When running &lt;code&gt;docker images&lt;/code&gt; you&amp;rsquo;ll see the following, images weighting several hundred of MBs. Even simple container, providing one singe service are heavy. Why ? Because base images used, such as Ubuntu, Centos and Debian images are themselves very heavy.&lt;/p&gt;
 

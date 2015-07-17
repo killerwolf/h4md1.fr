@@ -15,7 +15,7 @@
       <pubDate>Wed, 30 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/post/leverage-your-dev-boxes-with-vagrant-and-ansible/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;/images/post/vagrant-lamp-ansible.png&#34; /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/vagrant-lamp-ansible.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;&lt;/p&gt;
 
 &lt;p&gt;Vagrant is defacto standard when it comes to managing your developement machines. It allows you to spin a multi-VM developement environement in a second.
 For more details&amp;hellip;.&lt;a href=&#34;http://www.vagrantup.com&#34;&gt;VagrantUP&lt;/a&gt;.&lt;/p&gt;

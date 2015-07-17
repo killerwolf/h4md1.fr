@@ -81,33 +81,9 @@
                     </header>
 
                     <div class="post-description">
-                        <p><img class="thumbnail" src="/images/post/greasemonkey.gif" />
+                        <p><p><img src="/images/post/greasemonkey.gif" alt="" class="pure-img" >
 <a href="https://addons.mozilla.org/fr/firefox/addon/748">GreaseMonkey</a> est une extension pour Firefox, elle vous permet de prendre le controle du web. Vous trouvez tel site intéressent malgré le faite qu’il soit infesté de pub. Grace a GreaseMonkey et a un petit script de quelque ligne, le rendu visuel de votre site préféré sera modifié selon votre désir.</p>
-
-<p>Pour illustrer mon propos, j’ai écris à chaud le script JS ci-dessous, il supprime “Les Liens sponorisés” qui peuvent apparaitre lors de vos recherche sur Google. La connaissance du Javascript est biensur indispensable, mais aussi du Dom et/ou XPath .</p>
-
-<p>Je vous ai convaicu d’écrire vos propres scripts , pensez à partagez les partager sur <a href="http://userscripts.org/">UserScripts.org</a> si vous pensez qu’il peuvent être utiles à d’autre. <a href="http://userscripts.org/scripts/show/38984">Mon Google Sponsored Links remover</a> est disponible sur UserScripts et est disposé à toute critique de votre part.</p>
-
-<pre><code>// ==UserScript==
-// @name           Google Sponsored Links remover
-// @namespace      http://www.laadhari.fr
-// @description    remove google sponsored links from SERPS
-// @include        http://www.google.com/*
-// ==/UserScript==
-
-(function() {
-  var sidebarads = document.getElementById(‘mbEnd’);
-  var skyads = document.getElementById(‘tads’);
-  if (sidebarads) {
-    sidebarads.parentNode.removeChild(sidebarads);
-    }
-  if (skyads) {
-    skyads.parentNode.removeChild(skyads);
-    }  
-  }
-)();
-</code></pre>
-
+<a class="read-more" href="/post/greasemonkey-or-how-to-enhance-your-web-experience/">Continue reading &raquo;</a></p>
                     </div>
                 </section>
                 
@@ -124,25 +100,11 @@
                     </header>
 
                     <div class="post-description">
-                        <p><img class="thumbnail" src="/images/post/nabkiller.jpg" /></p>
+                        <p><p><img src="/images/post/nabkiller.jpg" alt="" class="pure-img" ></p>
 
 <p>J’ai récemment fait l’acquisition il y a une semaine d’un Nabaztag:tag, voir le site officiel si vous ne savez pas ce que c’est.
-Violet, le fabricant du Nabaztag:tag fournit une API avec son lapin. On peut interagir avec son propre lapin, lui faire faire plein de chose.
-Mon idée était de pouvoir faire faire lire les messages qu’on m’écrivait sur MSN par mon lapin, quand je met met en statut “AFK” (c-a-d Away from keyboard pour les non geek), je pourrais entendre les messages de mes amis quand je ne suis pas derrière mon écran pour les lire.
-Le lapin a une fonctionnalité Text To Speech, on lui envoie un texte par l’intermédiaire de l’API, et il les lit dès réception.</p>
-
-<p>Dernière étape: faire en sorte que MSN puisse déclencher certaines actions de l’API en fonctions de certains de ses événements interne. Et c’est la que Messenger plus live trouve son utilité. Tout le monde connait cet addon de MSN, mais ses possiblité de scripting ne sont pas connu de tous, c’est qu’on a la possibilité d’exécuter nos propres commandes grâce à l’environnement Javascript embarqué dans Mesenger plus live. En plus des Événements basique de MSN, cet addon implémente toutes une séries d’évènements très utile, il suffit donc d’implémenter les fonctions-évènements qui nous intéressent dans notre script JS.
-Voici la documentation fourni par Mesenger.
-Ci-dessous une courte vidéo montrant mes premier tests effectué avec mon NabKiller (c’est le nom que j’ai donné à mon lapin).</p>
-
-<div class="video-wrapper">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/4BKnJzcEGio?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<p>Idée que je vais surement développer avec mon lapin:
-Mon Nabkiller me préviendra dès qu’un nouvelle épisode des séries que je regarde est publié, et il me dira si les sous-titres de ce même épisode sont disponibles, à défault il me préviendra dès que ce sera le cas
-Doter mon lapin d’une intelligence artificiel, avec un bot pandorabot par exemple. Pour exemple voici <a href="http://sycophante.vhost.pandorabots.com/pandora/talk-oddcast?botid=a77514392e359d3d">Voldo</a> un bot doté d’un IA.</p>
-
+Violet, le fabricant du Nabaztag:tag fournit une API avec son lapin. On peut interagir avec son propre lapin, lui faire faire plein de chose.</p>
+<a class="read-more" href="/post/premier-essai-avec-api-nabkiller/">Continue reading &raquo;</a></p>
                     </div>
                 </section>
                 
@@ -159,10 +121,7 @@ Doter mon lapin d’une intelligence artificiel, avec un bot pandorabot par exem
                     </header>
 
                     <div class="post-description">
-                        <p>Je suis toujours à l’affût quand il s’agit d’acquérir un nouveau nom de domaine, j’essaye de trouver des niches, des domaines peu ou pas exploités, et des noms de domaines qui peuvent être associés. L’idée ou le nom de domaine peuvent me venir à l’esprit à n’importe quel moment de la journée, dans la douche, pendant le déjeuner, ou juste avant de m’endormir. Alors je regarde s’il est disponible ou pas. Si oui, il y a de forte chance que je l’achète tout de suite, ou du moins je le note quelque part pour ne pas oublier d’y repenser avec du recul. S’il est toujours libre aujourd’hui il y a de forte chance qu’il le soit encore dans quelques jours. Il faut tout de même faire gaffe car j’ai vu quelques noms de domaine très bon m’échapper de cette manière.
-Il existe de nombreux outils, services web qui permettent de gérer, surveiller vos propres noms de domaines ou ceux que vous convoitez. J’en parlerai dans un prochain billet et je parlerai aussi de la fulltitude de noms de domaines que je possède, et pour lesquels j’ai des projets….durs a réaliser si on en a pas le temps.
-Tchuss tout le monde.</p>
-
+                        <p>Je suis toujours à l’affût quand il s’agit d’acquérir un nouveau nom de domaine, j’essaye de trouver des niches, des domaines peu ou pas exploités, et des noms de domaines qui peuvent être associés. L’idée ou le nom de domaine peuvent me venir à l’esprit à n’importe quel moment de la journée, dans la douche, pendant le déjeuner, ou juste avant de m’endormir. Alors je regarde s’il est disponible ou pas.<a class="read-more" href="/post/les-noms-de-domaines/">Continue reading &raquo;</a></p>
                     </div>
                 </section>
                 
@@ -179,8 +138,7 @@ Tchuss tout le monde.</p>
                     </header>
 
                     <div class="post-description">
-                        <p>J’ai décidé de reprendre la mise à jour de mon blog après 6 mois de non activité. Profitant de cette semaine de vacances pour m’y consacrer un peu.</p>
-
+                        <p>J’ai décidé de reprendre la mise à jour de mon blog après 6 mois de non activité. Profitant de cette semaine de vacances pour m’y consacrer un peu.<a class="read-more" href="/post/come-back/">Continue reading &raquo;</a></p>
                     </div>
                 </section>
                 
@@ -197,27 +155,7 @@ Tchuss tout le monde.</p>
                     </header>
 
                     <div class="post-description">
-                        <p>Je reçois ces mails, trop pas sollicités de la part de mes amis, des chaines qui te persuade de forwarder pour la bonne cause et des trucs dans le genre. Mais de rares fois, on tombe sur quelque chose d’intéressant. C’est le cas de ce mail reçu il y a quelques jour. ENJOY.</p>
-
-<p>Ci dessous est la version d’une soi-disant question de chimie donnée à l’université de Montpellier. La réponse d’un étudiant a été si profonde que le professeur l’a partagé avec ses collègues, via internet, et c’est
-pourquoi nous avons le plaisir de la lire.</p>
-
-<p>Question bonus: L’enfer est il exothermique (évacue de la chaleur) ou endothermique ( absorbe de la chaleur) ? La plupart des étudiants ont exprimé leur croyance en utilisant la loi de Boyle (si un gaz se dilate il se refroidit et inversement) ou ses variantes. Cependant un étudiant eut la réponse suivante:</p>
-
-<p>Premièrement, nous avons besoin de connaître comment varie la masse de l’enfer avec le temps. Nous avons donc besoin de connaître à quel taux les âmes entrent et sortent de l’enfer. Je pense que nous pouvons sans risque assumer qu’une fois entrée en enfer, l’âme n’y ressortira plus. Du coup, aucune âme ne sort. De même pour le calcul du nombre d’entrée des âmes en enfer, nous devons regarder le fonctionnement des différentes religions qui existent de par le monde aujourd’hui. La plupart de ces religions affirment que si vous n’êtes pas un membre de leur religion alors vous irez en enfer.
-Comme il existe plus d’une religion exprimant cette règle et comme les gens n’appartiennent pas a plus d’une religion, nous pouvons projeter que toutes les âmes vont en enfer. Maintenant regardons la vitesse de changement de volume de l’enfer parce que la loi de Boyle spécifie que pour que la pression et la température reste identique en enfer, le volume de l’enfer doit se dilater proportionnellement à l’entrée des âmes.</p>
-
-<p>Cela donne deux possibilités :
-1 Si l’enfer se dilate à une vitesse moindre que l’entrée des âmes en enfer, alors la température et la pression en enfer augmenteront indéfiniment jusqu’à ce que l’enfer éclate. 2 Si l’enfer se dilate à une vitesse supérieure à la vitesse d’entrée des âmes en enfer, alors la température diminuera jusqu’à ce que l’enfer gèle.</p>
-
-<p>Laquelle choisir ?</p>
-
-<p>Si nous acceptons le postulat que Teresa m’a répondu durant ma première année d’étudiant “qu’ il fera froid en enfer avant que je couche avec toi” et e tenant compte du fait que j’ai couché avec elle la nuit dernière
-alors l’hypothèse doit être vrai et alors je suis sûr que l’enfer est exothermique et a déjà gelé. Le corollaire de cette théorie c’est que comme l’enfer a déjà gelé, il s’en suit qu’il n’accepte plus aucune âme et du coup qu’il n’existe plus… Laissant ainsi seul le paradis, ainsi prouvant l’existence
-d’un être divin ce qui explique pourquoi, la nuit dernière, Teresa n’arrêtait pas de crier ” oh mon dieu”</p>
-
-<p>C’EST LE SEUL ETUDIANT A AVOIR RECU LA NOTE 20</p>
-
+                        <p>Je reçois ces mails, trop pas sollicités de la part de mes amis, des chaines qui te persuade de forwarder pour la bonne cause et des trucs dans le genre. Mais de rares fois, on tombe sur quelque chose d’intéressant. C’est le cas de ce mail reçu il y a quelques jour. ENJOY. Ci dessous est la version d’une soi-disant question de chimie donnée à l’université de Montpellier. La réponse d’un étudiant a été si profonde que le professeur l’a partagé avec ses collègues, via internet, et c’est pourquoi nous avons le plaisir de la lire.<a class="read-more" href="/post/thermodynamique-mystique/">Continue reading &raquo;</a></p>
                     </div>
                 </section>
                 
@@ -234,17 +172,8 @@ d’un être divin ce qui explique pourquoi, la nuit dernière, Teresa n’arrê
                     </header>
 
                     <div class="post-description">
-                        <p>Il y a peine quelques jour j’ai mis la main sur 3 noms de domaines, ou plus exactement sur 1 nom de domaine avec 3 extensions différentes. Les voila <code>lolr.fr</code> <code>lolr.net</code> <code>lolr.org</code>. il est très enervant de voir le .com déjà déposé, et encore plus si ce dernier n’est pas du tout exploité par son propriétaire. Le .com est enregistré depuis 1997 jusqu’en 2012, son propriétaire a probablement oublié qu’il l’a deposé, ca arrive malheureusement souvent.</p>
-
-<p><img class="thumbnail pull-left" src="/images/post/flickr.png" />
-<strong>LOL</strong> signifie ‘laugh out loud’ ‘mort de rire’, donc un site d’humour, de videos drôles, images et news insolites serait totalement légitime. Et le R ? Que signifie t’il ? Avrai dire je ne le sais même pas moi même. On voit assez souvent un R trainait sur des nom de sites assez connu et très web 2.0, par exemple le célèbre flickr: service social de partage d’images, mais aussi TheFeedR: Un blog colaboratif traitant de l’actualité du web et des nouvelles technologies.</p>
-
-<p>Ce nom de domaine m’est venu à l’esprit par hasard, j’étais entrain de coder de nouvelles fonctionalités pour le site, et cette idée m’est venu à l’esprit, elle s’est présentée d’elle même. Le meilleur moyen de trouver des noms de domaine c’est de s’imerger dans tel niche, l’humour dans mon cas tout en réfléchissant à des noms de domaine potentiels, les noter rapidement et vérifier leur disponibilité qu’après.</p>
-
-<p><img class="thumbnail pull-left" src="/images/post/thefeedr.png" />Vous avez la possiblité d’exploiter ces noms de domaines ou de les revendre, c’est ce que j’ai fait il y a de cela 2 ans, j’avais déposé un nom de domaine avec 2 extensions différentes pour 1 an, 15 euros TTC à l’époque. Je les ai revendu avant leur expiration pour un total de 80 euros, je dois dire que j’étais assez content à l’époque.</p>
-
-<p>Quand je surfe sur le web, j’ai toujours a l’esprit la découverte de nouveau nom de domaine libre, cela m’a permis de tomber sur quelques petites perles.</p>
-
+                        <p><p>Il y a peine quelques jour j’ai mis la main sur 3 noms de domaines, ou plus exactement sur 1 nom de domaine avec 3 extensions différentes. Les voila <code>lolr.fr</code> <code>lolr.net</code> <code>lolr.org</code>. il est très enervant de voir le .com déjà déposé, et encore plus si ce dernier n’est pas du tout exploité par son propriétaire. Le .com est enregistré depuis 1997 jusqu’en 2012, son propriétaire a probablement oublié qu’il l’a deposé, ca arrive malheureusement souvent.</p>
+<a class="read-more" href="/post/achat-frenetique-de-noms-de-domaine/">Continue reading &raquo;</a></p>
                     </div>
                 </section>
                 
@@ -261,20 +190,7 @@ d’un être divin ce qui explique pourquoi, la nuit dernière, Teresa n’arrê
                     </header>
 
                     <div class="post-description">
-                        <p><strong>Tout est une histoire de sémantique et de mots clé ou presque, lorsqu’il s’agit d’optimiser ses pages pour le référencement. Je vais vous donner quelques outils qui vont vous être très utiles lors de ce choix crucial.
-Je me sert de 2, 3 outils qui me permettent de choisir les mots clé que je vais utiliser sur mes sites webs.</strong></p>
-
-<p>Prenons le mot ‘argent’ par exemple, vous désirez connaître toutes les expressions possibles formées sur ce mot telles que ‘gagner de l’argent’, ‘argent facile’, ‘gagner de l’argent sur internet’. Même mieux encore connaître toutes les expressions formées avec ‘argent’ recherchées par l’internaute, et ceci classé par ordre de popularité.
-Voici mes outils
-1:Google Keyword Tool, il s’agit à la base d’un outil pour les annonceurs AdWord mais rien à foutre tant qu’il nous est util, voir la capture d’écran.
-2:Générateur de mots clé Miva France (liste par ordre de popularité les expressions formées avec le mots clé que vous entrez, je ne sais pas quelles sont les moteurs de recherches qui sont concernés par ces statistiques de popularité).</p>
-
-<p>3: Keyword Selector Tool de overture (même principe que les autres outils, liste par ordre de popularité)</p>
-
-<p>Voila donc pour les outils d’aide au choix de mots clés, je parlerai de la façon de s’en servir dans un prochain article: Dois je utiliser tous les mots clé suggérés? Les quels dois je garder ? A quel fréquence faut il les utiliser ? Quel est le meilleur endroit de ma page pour les utiliser ?</p>
-
-<p>L’article touche à sa fin. Suite au prochain épisode.</p>
-
+                        <p>Tout est une histoire de sémantique et de mots clé ou presque, lorsqu’il s’agit d’optimiser ses pages pour le référencement. Je vais vous donner quelques outils qui vont vous être très utiles lors de ce choix crucial. Je me sert de 2, 3 outils qui me permettent de choisir les mots clé que je vais utiliser sur mes sites webs. Prenons le mot ‘argent’ par exemple, vous désirez connaître toutes les expressions possibles formées sur ce mot telles que ‘gagner de l’argent’, ‘argent facile’, ‘gagner de l’argent sur internet’.<a class="read-more" href="/post/importance-de-la-semantique/">Continue reading &raquo;</a></p>
                     </div>
                 </section>
                 
@@ -291,19 +207,7 @@ Voici mes outils
                     </header>
 
                     <div class="post-description">
-                        <p><strong>Voila je commence le premier billet sur la création d’un site web rentable, comme vous pouvez le deviner je commence à zéro, plutôt que d’acheter un site déjà présent sur la toile. Je dois faire tout le boulot, promotion, référencèrent &amp; co . Ce n’est pas plus mal, tout sera donc traiter.</strong></p>
-
-<p>Le nom de domaine est <strong>GAVOO.fr</strong>, j’en ai l’acquisition auprès de ce registar www.nod.fr, chez qui j’ai tout mes noms de domaine. à peu près une quinzaine. le .fr coûte 15 € par an hors taxe, c’est à dire 17,94 € /an. Tous ce dont vous avez besoin pour un .fr est d’être résident français. Un .com .net ou .org ne vous coûtera que 8,97 par an. Ce sont des prix très compétitif, et la qualité du service est excellente. Revenons à nos moutons.
-J’ai deja une idée du type de site que je vais y mettre en place, il s’agit d’un secteur très poteur en ce moment, même si je pense que j’arrive en retard, j’espère me distinguer avec la qualité de mon site. Il sera très niché. c’est à dire autour d’un thème, d’un sujet précis.</p>
-
-<p>Gavoo sera du même type que tekyo.com et autre teepik.com mais avec des aspects différents, axé beaucoup plus communauté, autour de l’internaute qui sera acteur de ce qu’il voit, écoute et lis, les idée de contenu sera celle des utilisateurs. Je vais commencer par une architecture graphique très soft au début, pour ensuite connaître les besoins exactes et ainsi dessuite implanté les fonctionnalités nécessaires.
-Gavoo sera principalement niché autour des vidéos insolites, surprenantes, mettant en scène des gens ou même des animaux avec certaines qualités ( qui se gavent ).</p>
-
-<p>Voila pour ce premier billet qui rentre dans le vif du sujet concernant la création de zéro d’un site et se rentabilisation.
-Les futurs billets concernant Gavoo seront ranger dans la catégorie ‘Case Study’</p>
-
-<p>A vos commentaires.</p>
-
+                        <p>Voila je commence le premier billet sur la création d’un site web rentable, comme vous pouvez le deviner je commence à zéro, plutôt que d’acheter un site déjà présent sur la toile. Je dois faire tout le boulot, promotion, référencèrent &amp; co . Ce n’est pas plus mal, tout sera donc traiter. Le nom de domaine est GAVOO.fr, j’en ai l’acquisition auprès de ce registar www.nod.fr, chez qui j’ai tout mes noms de domaine.<a class="read-more" href="/post/achat-du-nom-de-domaine-gavoo-fr/">Continue reading &raquo;</a></p>
                     </div>
                 </section>
                 
@@ -320,21 +224,7 @@ Les futurs billets concernant Gavoo seront ranger dans la catégorie ‘Case Stu
                     </header>
 
                     <div class="post-description">
-                        
-
-<p><img class="thumbnail pull-left" src="http://www.gravatar.com/avatar/3ee5607e4ea3087527eac045c333f45d?s=200" /></p>
-
-<h2 id="about-me:6083a88ee3411b0d17ce02d738f69d47">About me</h2>
-
-<p>Just a 27 years old guy messing around with all the geeky stuff i can put my hands on. I am a Unix-philosophy enable guy.
-With more than ten years il the web industries. Il still remember DNS entry used to take up to 48 hours to propagate. And keyword stuffing the most advanced and rewarding SEO technique.</p>
-
-<h2 id="about-the-blog:6083a88ee3411b0d17ce02d738f69d47">About the blog</h2>
-
-<p>This blog is powered with <strong>Lectroid</strong>, a light-weight <strong>NodeJS</strong> blog engine. Hosted in the cloud with nodejiitsu.
-I am using <strong>Cloud9 IDE</strong>, a free and open source full-featured IDE in cloud with builtin developpement environement.
-*aaS is the way to go.</p>
-
+                        <p>About me Just a 27 years old guy messing around with all the geeky stuff i can put my hands on. I am a Unix-philosophy enable guy. With more than ten years il the web industries. Il still remember DNS entry used to take up to 48 hours to propagate. And keyword stuffing the most advanced and rewarding SEO technique. About the blog This blog is powered with Lectroid, a light-weight NodeJS blog engine.<a class="read-more" href="/about/">Continue reading &raquo;</a></p>
                     </div>
                 </section>
                 
@@ -364,7 +254,6 @@ I am using <strong>Cloud9 IDE</strong>, a free and open source full-featured IDE
         </div>
     </div>
 </div>
-
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -15,8 +15,7 @@
       <pubDate>Sun, 21 Jun 2015 00:00:00 +0000</pubDate>
       
       <guid>/post/put-your-docker-images-on-a-diet/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/images/post/2015/Docker_container_engine_logo.png&#34; alt=&#34;image&#34; /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/2015/Docker_container_engine_logo.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;&lt;/p&gt;
 
 &lt;p&gt;When running &lt;code&gt;docker images&lt;/code&gt; you&amp;rsquo;ll see the following, images weighting several hundred of MBs. Even simple container, providing one singe service are heavy. Why ? Because base images used, such as Ubuntu, Centos and Debian images are themselves very heavy.&lt;/p&gt;
 
@@ -37,7 +36,7 @@
       <pubDate>Wed, 30 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/post/leverage-your-dev-boxes-with-vagrant-and-ansible/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;/images/post/vagrant-lamp-ansible.png&#34; /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/vagrant-lamp-ansible.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;&lt;/p&gt;
 
 &lt;p&gt;Vagrant is defacto standard when it comes to managing your developement machines. It allows you to spin a multi-VM developement environement in a second.
 For more details&amp;hellip;.&lt;a href=&#34;http://www.vagrantup.com&#34;&gt;VagrantUP&lt;/a&gt;.&lt;/p&gt;
@@ -53,7 +52,7 @@ Give it a try and clone my example project &lt;a href=&#34;https://github.com/ki
       <pubDate>Sat, 05 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>/post/name-ezpublish-web-transaction-in-ezpublish/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;thumbnail text-center&#34; src=&#34;/images/post/2013-10/newrelic_transaction.png&#34; /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/2013-10/newrelic_transaction.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;&lt;/p&gt;
 
 &lt;p&gt;When using &lt;strong&gt;NewRelic PHP agent&lt;/strong&gt; with an eZ Publish stack. the profiled transactions will show under &lt;code&gt;/index.php&lt;/code&gt;. To get better insights of what makes your app struggle.&lt;/p&gt;
 
@@ -73,9 +72,7 @@ Give it a try and clone my example project &lt;a href=&#34;https://github.com/ki
       <guid>/post/uninstall-bluestacks-from-your-mac/</guid>
       <description>
 
-&lt;p&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;/images/post/2013-05-28-uninstall-bluestacks-from-your-mac/bluestacks-uninstall.png&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;bluestacks:17e7babec975c6caa5e4f3d2cc18144c&#34;&gt;BlueStacks:&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;/images/post/2013-05-28-uninstall-bluestacks-from-your-mac/bluestacks-uninstall.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;&lt;/p&gt;
 
 &lt;p&gt;For some reverse engineering needs, i installed a full featured android environement called &lt;strong&gt;BlueStacks&lt;/strong&gt;. I decided to remove after playing with it a couple of hours. I crawled the web and found no up-to-date way of removing it. BlueStacks is a pretty intrusive app.
 After browsing deep into &lt;code&gt;~/Library&lt;/code&gt; I found out how.&lt;/p&gt;
@@ -99,8 +96,7 @@ After browsing deep into &lt;code&gt;~/Library&lt;/code&gt; I found out how.&lt;
       <pubDate>Mon, 27 May 2013 00:00:00 +0000</pubDate>
       
       <guid>/post/revamping-the-blog-done/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/images/post/2013-05-27-revamping-the-blog-done/h4md1-responsive-design.png&#34; alt=&#34;revamping the blog with Node.JS&#34; title=&#34;NodeJS&#34; /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/2013-05-27-revamping-the-blog-done/h4md1-responsive-design.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;&lt;/p&gt;
 
 &lt;p&gt;I am done revamping the blog with &lt;a href=&#34;https://github.com/rgrove/lectroid&#34;&gt;&lt;strong&gt;Lectroid&lt;/strong&gt;&lt;/a&gt; . This blog engine offers all the basic features you may need. It is curently hosted on &lt;a href=&#34;https://www.nodejitsu.com&#34;&gt;&lt;strong&gt;NodeJitsu&lt;/strong&gt;&lt;/a&gt; with the cheapest plan. Frontend design is fully responsive and made with &lt;a href=&#34;http://twitter.github.io/bootstrap/&#34;&gt;&lt;strong&gt;Twitter Bootstrap&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
@@ -114,8 +110,7 @@ After browsing deep into &lt;code&gt;~/Library&lt;/code&gt; I found out how.&lt;
       <pubDate>Sat, 06 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>/post/revamping-the-blog-in-progess/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/images/post/revamping-blog.jpg&#34; alt=&#34;revamping the blog with Node.JS&#34; title=&#34;NodeJS&#34; /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/revamping-blog.jpg&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;From now on this blog will be held in english only. Despite I am not a native english speaker, I feel more easier writing in Shakespeare language. I writing this post to announce the upcoming blob revamp.&lt;/strong&gt;&lt;/p&gt;
 
@@ -135,16 +130,12 @@ After browsing deep into &lt;code&gt;~/Library&lt;/code&gt; I found out how.&lt;
       <guid>/post/import-rss-natif-ez-publish-support-balise-enclosure/</guid>
       <description>
 
-&lt;p&gt;&lt;img class=&#34;thumbnail pull-left&#34; src=&#34;/images/post/ezpublish_media_import_rss-150x150.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;le-besoin:9c6f926ca04ed334e17e208e483449a0&#34;&gt;Le besoin&lt;/h3&gt;
-
-&lt;p&gt;eZ publish offre la possibilité sans écrire une seule ligne de code, d’importer des contenus d’un flux RSS, sous forme de contenus eZpublish. Mais cette fonctionnalité native ne permet pas d’importer les média inclus dans la balise &lt;code&gt;&amp;lt;enclosure&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;thumbnail pull-left&#34; src=&#34;/images/post/ezpublish_media_import_rss-150x150.jpg&#34; /&gt;eZ publish offre la possibilité sans écrire une seule ligne de code, d’importer des contenus d’un flux RSS, sous forme de contenus eZpublish. Mais cette fonctionnalité native ne permet pas d’importer les média inclus dans la balise &lt;code&gt;&amp;lt;enclosure&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Je vais donc vous montrer comme vous permettre de récupérer ce media (image ou autre fichier tel que pdf, doc ou flv) et de l’insérer de manière transparente dans vos contenus eZ Publish.
 Cette fonctionnalité est un peu codé en dur dans eZ Publish et n’est pas extensible proprement. Je vais vous la manière &lt;em&gt;Quick and dirty&lt;/em&gt; pour arriver à vos fin. A vous ensuite de choisir si vous voulez passer du temp à faire cela proprement.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;enclosure url=&amp;quot;http://www.example.com/images/voiture.jpg&amp;quot; length=&amp;quot;&amp;quot; type=&amp;quot;image/jpeg&amp;quot;/&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;enclosure url=&amp;quot;http://www.example.com/images/voiture.jpg&amp;quot; length=&amp;quot;&amp;quot; type=&amp;quot;image/jpeg&amp;quot;/&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;implémentation-quick-and-dirty:9c6f926ca04ed334e17e208e483449a0&#34;&gt;Implémentation quick and dirty&lt;/h3&gt;
@@ -158,7 +149,7 @@ Cette fonctionnalité est un peu codé en dur dans eZ Publish et n’est pas ext
 
 &lt;p&gt;La fonction &lt;code&gt;setObjectAttributeValue()&lt;/code&gt; permet de traiter la récupération des différents types d’attributs (ligne de texte, bloc xml), c’est donc ici que nous allons naturellement ajouter le traitement de notre attribut ezimage (cela fonctionne aussi avec ezfile). Nous allons rajouter le &lt;code&gt;case ‘ezimage’&lt;/code&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;function setObjectAttributeValue( $objectAttribute, $value )
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;function setObjectAttributeValue( $objectAttribute, $value )
 {
     //…
     switch( $dataType )
@@ -183,7 +174,7 @@ Cette fonctionnalité est un peu codé en dur dans eZ Publish et n’est pas ext
 
 &lt;p&gt;Après s’être occupé d’apprendre à &lt;strong&gt;eZ Publish&lt;/strong&gt; comment traiter les ezimage. Nous allons maintenant ajouter &lt;code&gt;Item – Enclosure – Url&lt;/code&gt; dans le &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; (voir image plus haut). Occupons nous de la méthode &lt;code&gt;rssFieldDefinition()&lt;/code&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;case ’2.0′:
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;case ’2.0′:
 case ’0.91′:
 case ’0.92′:
 {
@@ -218,8 +209,8 @@ case ’0.92′:
 La méthode &lt;code&gt;rssFieldDefinition()&lt;/code&gt; est utilisé dans une autre méthode de la même classe, on remarque la présence d’un hook qui permet d’étendre sa définition a partir des classes présentes dans nos extensions custom.
 Voici le hook qui est dans la méthode &lt;code&gt;fieldMap()&lt;/code&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$fieldDefinition = eZRSSImport::rssFieldDefinition();
-
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;$fieldDefinition = eZRSSImport::rssFieldDefinition();
+ 
 $ini = eZINI::instance();
 foreach( $ini-&amp;gt;variable( ‘RSSSettings’, ‘ActiveExtensions’ ) as $activeExtension )
 {
@@ -233,7 +224,7 @@ foreach( $ini-&amp;gt;variable( ‘RSSSettings’, ‘ActiveExtensions’ ) as $
 
 &lt;p&gt;Il nous suffit donc de créer une classe dans &lt;code&gt;extension/monextension/rss/ezrssimage.php&lt;/code&gt; avec ce code, avec une methode du même nom: &lt;code&gt;rssFieldDefinition()&lt;/code&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;class ezrssimagerssimport
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;class ezrssimagerssimport
 {
     static function rssFieldDefinition()
     {
@@ -244,7 +235,7 @@ foreach( $ini-&amp;gt;variable( ‘RSSSettings’, ‘ActiveExtensions’ ) as $
 
 &lt;p&gt;et de déclarer cette classe dans le fichier &lt;code&gt;monextension/settings/site.ini.append.php&lt;/code&gt;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;[RSSSettings]
+&lt;pre&gt;&lt;code class=&#34;language-ìni&#34;&gt;[RSSSettings]
 ActiveExtensions[]=ezrssimage
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -261,7 +252,7 @@ N’hésitez pas à me signaler des erreurs ou améliorations que vous jugerez u
       <pubDate>Wed, 13 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>/post/filtre-custom-imagemagick-pour-ez-publish/</guid>
-      <description>&lt;p&gt;Les filtres par défaut d’&lt;strong&gt;eZ Publish&lt;/strong&gt;, ne vous permettent pas de rogner les images pour les faire entrer dans des dimensions précises. Le fichier de conf &lt;code&gt;image.ini&lt;/code&gt; vous permet d’implémenter sous &lt;strong&gt;eZ Publish&lt;/strong&gt; toutes les possibilités offertes par les outils CLI d’&lt;strong&gt;ImageMagick&lt;/strong&gt;. Voici 2 filtres qui effectuent la même tâche mais avec 2 manières différentes: rogner et redimensionner les images, libre à vous de les utiliser avec vos Alias&lt;/p&gt;
+      <description>&lt;p&gt;Les filtres par défaut d’&lt;strong&gt;eZ Publish&lt;/strong&gt;, ne vous permettent pas de rogner les images pour les faire entrer dans des dimensions précises. Le fichier de conf &lt;code&gt;image.ini&lt;/code&gt; vous permet d’implémenter sous &lt;strong&gt;eZ Publish&lt;/strong&gt; toutes les possibilités offertes par les outils CLI d’&lt;strong&gt;ImageMagick&lt;/strong&gt;. Voici 2 filtres qui effectuent la même tâche mais avec 2 manières différentes: rogner et redimensionner les images, libre à vous de les utiliser avec vos Alias.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Filters[]=geometry/thumbnailize=-thumbnail &amp;quot;%1x%2^&amp;quot; -gravity center -extent %1x%2
 Filters[]=geometry/thumbnailize2=-geometry %1x%2^ -gravity center -crop %1x%2+0+0 +repage
@@ -275,8 +266,7 @@ Filters[]=geometry/thumbnailize2=-geometry %1x%2^ -gravity center -crop %1x%2+0+
       <pubDate>Sun, 18 Jan 2009 00:00:00 +0000</pubDate>
       
       <guid>/post/mon-premier-widget-uwa-netvibes-igoogle/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/images/post/netvibes.jpg&#34; alt=&#34;NetVibes iGoogle Widget&#34; title=&#34;NetVibes iGoogle Widget&#34; /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/netvibes.jpg&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;}&lt;/p&gt;
 
 &lt;p&gt;A la base, le projet etait prévu pour mon tag:tag NabKiller, but i wanted to mess with the netvibes UWA. Ce widget affiche les horaires de diffusion des séries que je regarde régulièrement.&lt;/p&gt;
 
@@ -291,8 +281,7 @@ Filters[]=geometry/thumbnailize2=-geometry %1x%2^ -gravity center -crop %1x%2+0+
 
 &lt;p&gt;Le widget prend 3 paramètres, le &lt;code&gt;tid&lt;/code&gt; et le &lt;code&gt;hash&lt;/code&gt; que vous trouvez dans l’url de votre flux personnalisé, et le troisiéme qui est l’adresse de mon API.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/post/netvibes-param.jpg&#34; alt=&#34;NetVibes iGoogle Widget&#34; title=&#34;NetVibes iGoogle Widget&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/post/netvibes-param.jpg&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -316,7 +305,7 @@ Filters[]=geometry/thumbnailize2=-geometry %1x%2^ -gravity center -crop %1x%2+0+
       <pubDate>Sun, 21 Dec 2008 00:00:00 +0000</pubDate>
       
       <guid>/post/greasemonkey-or-how-to-enhance-your-web-experience/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;/images/post/greasemonkey.gif&#34; /&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/greasemonkey.gif&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
 &lt;a href=&#34;https://addons.mozilla.org/fr/firefox/addon/748&#34;&gt;GreaseMonkey&lt;/a&gt; est une extension pour Firefox, elle vous permet de prendre le controle du web. Vous trouvez tel site intéressent malgré le faite qu’il soit infesté de pub. Grace a GreaseMonkey et a un petit script de quelque ligne, le rendu visuel de votre site préféré sera modifié selon votre désir.&lt;/p&gt;
 
 &lt;p&gt;Pour illustrer mon propos, j’ai écris à chaud le script JS ci-dessous, il supprime “Les Liens sponorisés” qui peuvent apparaitre lors de vos recherche sur Google. La connaissance du Javascript est biensur indispensable, mais aussi du Dom et/ou XPath .&lt;/p&gt;
@@ -351,11 +340,12 @@ Filters[]=geometry/thumbnailize2=-geometry %1x%2^ -gravity center -crop %1x%2+0+
       <pubDate>Fri, 12 Dec 2008 00:00:00 +0000</pubDate>
       
       <guid>/post/premier-essai-avec-api-nabkiller/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;/images/post/nabkiller.jpg&#34; /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/nabkiller.jpg&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;&lt;/p&gt;
 
 &lt;p&gt;J’ai récemment fait l’acquisition il y a une semaine d’un Nabaztag:tag, voir le site officiel si vous ne savez pas ce que c’est.
-Violet, le fabricant du Nabaztag:tag fournit une API avec son lapin. On peut interagir avec son propre lapin, lui faire faire plein de chose.
-Mon idée était de pouvoir faire faire lire les messages qu’on m’écrivait sur MSN par mon lapin, quand je met met en statut “AFK” (c-a-d Away from keyboard pour les non geek), je pourrais entendre les messages de mes amis quand je ne suis pas derrière mon écran pour les lire.
+Violet, le fabricant du Nabaztag:tag fournit une API avec son lapin. On peut interagir avec son propre lapin, lui faire faire plein de chose.&lt;/p&gt;
+
+&lt;p&gt;Mon idée était de pouvoir faire faire lire les messages qu’on m’écrivait sur MSN par mon lapin, quand je met met en statut “AFK” (c-a-d Away from keyboard pour les non geek), je pourrais entendre les messages de mes amis quand je ne suis pas derrière mon écran pour les lire.
 Le lapin a une fonctionnalité Text To Speech, on lui envoie un texte par l’intermédiaire de l’API, et il les lit dès réception.&lt;/p&gt;
 
 &lt;p&gt;Dernière étape: faire en sorte que MSN puisse déclencher certaines actions de l’API en fonctions de certains de ses événements interne. Et c’est la que Messenger plus live trouve son utilité. Tout le monde connait cet addon de MSN, mais ses possiblité de scripting ne sont pas connu de tous, c’est qu’on a la possibilité d’exécuter nos propres commandes grâce à l’environnement Javascript embarqué dans Mesenger plus live. En plus des Événements basique de MSN, cet addon implémente toutes une séries d’évènements très utile, il suffit donc d’implémenter les fonctions-évènements qui nous intéressent dans notre script JS.

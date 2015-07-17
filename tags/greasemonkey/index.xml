@@ -15,7 +15,7 @@
       <pubDate>Sun, 21 Dec 2008 00:00:00 +0000</pubDate>
       
       <guid>/post/greasemonkey-or-how-to-enhance-your-web-experience/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;thumbnail&#34; src=&#34;/images/post/greasemonkey.gif&#34; /&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/greasemonkey.gif&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;
 &lt;a href=&#34;https://addons.mozilla.org/fr/firefox/addon/748&#34;&gt;GreaseMonkey&lt;/a&gt; est une extension pour Firefox, elle vous permet de prendre le controle du web. Vous trouvez tel site intéressent malgré le faite qu’il soit infesté de pub. Grace a GreaseMonkey et a un petit script de quelque ligne, le rendu visuel de votre site préféré sera modifié selon votre désir.&lt;/p&gt;
 
 &lt;p&gt;Pour illustrer mon propos, j’ai écris à chaud le script JS ci-dessous, il supprime “Les Liens sponorisés” qui peuvent apparaitre lors de vos recherche sur Google. La connaissance du Javascript est biensur indispensable, mais aussi du Dom et/ou XPath .&lt;/p&gt;

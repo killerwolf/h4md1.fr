@@ -15,7 +15,7 @@
       <pubDate>Sat, 05 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>/post/name-ezpublish-web-transaction-in-ezpublish/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;thumbnail text-center&#34; src=&#34;/images/post/2013-10/newrelic_transaction.png&#34; /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/2013-10/newrelic_transaction.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;&lt;/p&gt;
 
 &lt;p&gt;When using &lt;strong&gt;NewRelic PHP agent&lt;/strong&gt; with an eZ Publish stack. the profiled transactions will show under &lt;code&gt;/index.php&lt;/code&gt;. To get better insights of what makes your app struggle.&lt;/p&gt;
 
@@ -35,16 +35,12 @@
       <guid>/post/import-rss-natif-ez-publish-support-balise-enclosure/</guid>
       <description>
 
-&lt;p&gt;&lt;img class=&#34;thumbnail pull-left&#34; src=&#34;/images/post/ezpublish_media_import_rss-150x150.jpg&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;le-besoin:9c6f926ca04ed334e17e208e483449a0&#34;&gt;Le besoin&lt;/h3&gt;
-
-&lt;p&gt;eZ publish offre la possibilité sans écrire une seule ligne de code, d’importer des contenus d’un flux RSS, sous forme de contenus eZpublish. Mais cette fonctionnalité native ne permet pas d’importer les média inclus dans la balise &lt;code&gt;&amp;lt;enclosure&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;thumbnail pull-left&#34; src=&#34;/images/post/ezpublish_media_import_rss-150x150.jpg&#34; /&gt;eZ publish offre la possibilité sans écrire une seule ligne de code, d’importer des contenus d’un flux RSS, sous forme de contenus eZpublish. Mais cette fonctionnalité native ne permet pas d’importer les média inclus dans la balise &lt;code&gt;&amp;lt;enclosure&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Je vais donc vous montrer comme vous permettre de récupérer ce media (image ou autre fichier tel que pdf, doc ou flv) et de l’insérer de manière transparente dans vos contenus eZ Publish.
 Cette fonctionnalité est un peu codé en dur dans eZ Publish et n’est pas extensible proprement. Je vais vous la manière &lt;em&gt;Quick and dirty&lt;/em&gt; pour arriver à vos fin. A vous ensuite de choisir si vous voulez passer du temp à faire cela proprement.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;enclosure url=&amp;quot;http://www.example.com/images/voiture.jpg&amp;quot; length=&amp;quot;&amp;quot; type=&amp;quot;image/jpeg&amp;quot;/&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;enclosure url=&amp;quot;http://www.example.com/images/voiture.jpg&amp;quot; length=&amp;quot;&amp;quot; type=&amp;quot;image/jpeg&amp;quot;/&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;implémentation-quick-and-dirty:9c6f926ca04ed334e17e208e483449a0&#34;&gt;Implémentation quick and dirty&lt;/h3&gt;
@@ -58,7 +54,7 @@ Cette fonctionnalité est un peu codé en dur dans eZ Publish et n’est pas ext
 
 &lt;p&gt;La fonction &lt;code&gt;setObjectAttributeValue()&lt;/code&gt; permet de traiter la récupération des différents types d’attributs (ligne de texte, bloc xml), c’est donc ici que nous allons naturellement ajouter le traitement de notre attribut ezimage (cela fonctionne aussi avec ezfile). Nous allons rajouter le &lt;code&gt;case ‘ezimage’&lt;/code&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;function setObjectAttributeValue( $objectAttribute, $value )
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;function setObjectAttributeValue( $objectAttribute, $value )
 {
     //…
     switch( $dataType )
@@ -83,7 +79,7 @@ Cette fonctionnalité est un peu codé en dur dans eZ Publish et n’est pas ext
 
 &lt;p&gt;Après s’être occupé d’apprendre à &lt;strong&gt;eZ Publish&lt;/strong&gt; comment traiter les ezimage. Nous allons maintenant ajouter &lt;code&gt;Item – Enclosure – Url&lt;/code&gt; dans le &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; (voir image plus haut). Occupons nous de la méthode &lt;code&gt;rssFieldDefinition()&lt;/code&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;case ’2.0′:
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;case ’2.0′:
 case ’0.91′:
 case ’0.92′:
 {
@@ -118,8 +114,8 @@ case ’0.92′:
 La méthode &lt;code&gt;rssFieldDefinition()&lt;/code&gt; est utilisé dans une autre méthode de la même classe, on remarque la présence d’un hook qui permet d’étendre sa définition a partir des classes présentes dans nos extensions custom.
 Voici le hook qui est dans la méthode &lt;code&gt;fieldMap()&lt;/code&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$fieldDefinition = eZRSSImport::rssFieldDefinition();
-
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;$fieldDefinition = eZRSSImport::rssFieldDefinition();
+ 
 $ini = eZINI::instance();
 foreach( $ini-&amp;gt;variable( ‘RSSSettings’, ‘ActiveExtensions’ ) as $activeExtension )
 {
@@ -133,7 +129,7 @@ foreach( $ini-&amp;gt;variable( ‘RSSSettings’, ‘ActiveExtensions’ ) as $
 
 &lt;p&gt;Il nous suffit donc de créer une classe dans &lt;code&gt;extension/monextension/rss/ezrssimage.php&lt;/code&gt; avec ce code, avec une methode du même nom: &lt;code&gt;rssFieldDefinition()&lt;/code&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;class ezrssimagerssimport
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;class ezrssimagerssimport
 {
     static function rssFieldDefinition()
     {
@@ -144,7 +140,7 @@ foreach( $ini-&amp;gt;variable( ‘RSSSettings’, ‘ActiveExtensions’ ) as $
 
 &lt;p&gt;et de déclarer cette classe dans le fichier &lt;code&gt;monextension/settings/site.ini.append.php&lt;/code&gt;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;[RSSSettings]
+&lt;pre&gt;&lt;code class=&#34;language-ìni&#34;&gt;[RSSSettings]
 ActiveExtensions[]=ezrssimage
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -161,7 +157,7 @@ N’hésitez pas à me signaler des erreurs ou améliorations que vous jugerez u
       <pubDate>Wed, 13 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>/post/filtre-custom-imagemagick-pour-ez-publish/</guid>
-      <description>&lt;p&gt;Les filtres par défaut d’&lt;strong&gt;eZ Publish&lt;/strong&gt;, ne vous permettent pas de rogner les images pour les faire entrer dans des dimensions précises. Le fichier de conf &lt;code&gt;image.ini&lt;/code&gt; vous permet d’implémenter sous &lt;strong&gt;eZ Publish&lt;/strong&gt; toutes les possibilités offertes par les outils CLI d’&lt;strong&gt;ImageMagick&lt;/strong&gt;. Voici 2 filtres qui effectuent la même tâche mais avec 2 manières différentes: rogner et redimensionner les images, libre à vous de les utiliser avec vos Alias&lt;/p&gt;
+      <description>&lt;p&gt;Les filtres par défaut d’&lt;strong&gt;eZ Publish&lt;/strong&gt;, ne vous permettent pas de rogner les images pour les faire entrer dans des dimensions précises. Le fichier de conf &lt;code&gt;image.ini&lt;/code&gt; vous permet d’implémenter sous &lt;strong&gt;eZ Publish&lt;/strong&gt; toutes les possibilités offertes par les outils CLI d’&lt;strong&gt;ImageMagick&lt;/strong&gt;. Voici 2 filtres qui effectuent la même tâche mais avec 2 manières différentes: rogner et redimensionner les images, libre à vous de les utiliser avec vos Alias.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Filters[]=geometry/thumbnailize=-thumbnail &amp;quot;%1x%2^&amp;quot; -gravity center -extent %1x%2
 Filters[]=geometry/thumbnailize2=-geometry %1x%2^ -gravity center -crop %1x%2+0+0 +repage

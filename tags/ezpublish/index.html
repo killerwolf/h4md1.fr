@@ -81,16 +81,10 @@
                     </header>
 
                     <div class="post-description">
-                        <p><img class="thumbnail text-center" src="/images/post/2013-10/newrelic_transaction.png" /></p>
+                        <p><p><img src="/images/post/2013-10/newrelic_transaction.png" alt="" class="pure-img" ></p>
 
 <p>When using <strong>NewRelic PHP agent</strong> with an eZ Publish stack. the profiled transactions will show under <code>/index.php</code>. To get better insights of what makes your app struggle.</p>
-
-<p><strong>NewRelic</strong> provides a self explanatory <a href="https://docs.newrelic.com/docs/php/the-php-api"><strong>PHP API</strong></a>. This API lets you send additional metrics/data along by the ones the agent already gathers.</p>
-
-<p>The eZ Publish extension <a href="https://github.com/killerwolf/ezpublish-newrelic"><strong>ezpublish-newrelic</strong></a> I wrote allows you to track modules and theires views under a separate transaction name.</p>
-
-<p>Code source is hosted on <a href="https://github.com/killerwolf/ezpublish-newrelic">GitHub</a> and is available for install on <a href="https://packagist.org/packages/killerwolf/ezpublish-newrelic"><strong>Packagist</strong></a> via <strong>Composer</strong>, feel free to contribute.</p>
-
+<a class="read-more" href="/post/name-ezpublish-web-transaction-in-ezpublish/">Continue reading &raquo;</a></p>
                     </div>
                 </section>
                 
@@ -107,126 +101,8 @@
                     </header>
 
                     <div class="post-description">
-                        
-
-<p><img class="thumbnail pull-left" src="/images/post/ezpublish_media_import_rss-150x150.jpg" /></p>
-
-<h3 id="le-besoin:9c6f926ca04ed334e17e208e483449a0">Le besoin</h3>
-
-<p>eZ publish offre la possibilité sans écrire une seule ligne de code, d’importer des contenus d’un flux RSS, sous forme de contenus eZpublish. Mais cette fonctionnalité native ne permet pas d’importer les média inclus dans la balise <code>&lt;enclosure&gt;</code></p>
-
-<p>Je vais donc vous montrer comme vous permettre de récupérer ce media (image ou autre fichier tel que pdf, doc ou flv) et de l’insérer de manière transparente dans vos contenus eZ Publish.
-Cette fonctionnalité est un peu codé en dur dans eZ Publish et n’est pas extensible proprement. Je vais vous la manière <em>Quick and dirty</em> pour arriver à vos fin. A vous ensuite de choisir si vous voulez passer du temp à faire cela proprement.</p>
-
-<pre><code>&lt;enclosure url=&quot;http://www.example.com/images/voiture.jpg&quot; length=&quot;&quot; type=&quot;image/jpeg&quot;/&gt;
-</code></pre>
-
-<h3 id="implémentation-quick-and-dirty:9c6f926ca04ed334e17e208e483449a0">Implémentation quick and dirty</h3>
-
-<p>Voici les fichiers qui seront impacter par nos modifications. Ce sont des fichiers du noyau eZPublish</p>
-
-<ul>
-<li>La fonction <code>setObjectAttributeValue()</code> dans le fichier <code>cronjobs/rssimport.php</code> (script php apellé par crond pour aller récupérer les nouveaux items des flux RSS configurés en Back Office)</li>
-<li>La methode <code>rssFieldDefinition()</code> dans le fichier <code>kernel/classes/ezrssimport.php</code></li>
-</ul>
-
-<p>La fonction <code>setObjectAttributeValue()</code> permet de traiter la récupération des différents types d’attributs (ligne de texte, bloc xml), c’est donc ici que nous allons naturellement ajouter le traitement de notre attribut ezimage (cela fonctionne aussi avec ezfile). Nous allons rajouter le <code>case ‘ezimage’</code></p>
-
-<pre><code>function setObjectAttributeValue( $objectAttribute, $value )
-{
-    //…
-    switch( $dataType )
-    {
-        //…
-        case ‘ezimage’:
-        {
-            $file = pathinfo($value);
-            $image = eZHTTPTool::getDataByURL( $value );
-            if($image !== false)
-            {
-                $fp = fopen(‘/tmp/’.$file[‘basename’],‘wb’);
-                fwrite($fp, $image, strlen($image));
-                fclose($fp);
-                $objectAttribute-&gt;fromString( ‘/tmp/’.$file[‘basename’] );
-            }
-        } break;
-        //..
-    }
-}
-</code></pre>
-
-<p>Après s’être occupé d’apprendre à <strong>eZ Publish</strong> comment traiter les ezimage. Nous allons maintenant ajouter <code>Item – Enclosure – Url</code> dans le <code>&lt;select&gt;</code> (voir image plus haut). Occupons nous de la méthode <code>rssFieldDefinition()</code></p>
-
-<pre><code>case ’2.0′:
-case ’0.91′:
-case ’0.92′:
-{
-  return array( ‘item’ =&gt; array( ‘elements’ =&gt; array( ‘title’,
-                                                      ‘link’,
-                                                      ‘description’,
-                                                      ‘author’,
-                                                      ‘category’,
-                                                      ‘comments’,
-                                                      ‘guid’,
-                                                      ‘pubDate’,
-                                                      ‘enclosure’ =&gt; array( ‘attributes’ =&gt; array( ‘url’ ) ) ) ),
-                ‘channel’ =&gt; array( ‘elements’ =&gt; array( ‘title’,
-                                                         ‘link’,
-                                                         ‘description’,
-                                                         ‘copyright’,
-                                                         ‘managingEditor’,
-                                                         ‘webMaster’,
-                                                         ‘pubDate’,
-                                                         ‘lastBuildDate’,
-                                                         ‘category’,
-                                                         ‘generator’,
-                                                         ‘docs’,
-                                                         ‘cloud’,
-                                                         ‘ttl’ ) ) );
-}
-</code></pre>
-
-<h3 id="implémentation-plus-propre:9c6f926ca04ed334e17e208e483449a0">Implémentation plus propre</h3>
-
-<p>Au lieu de modifier le cron <code>rssimport.php</code> vous pouvez le copier dans votre extension y apporter les modifications pour le ezimage. Et appeler ce dernier au lieu du <code>rssimport.php</code> par défaut d’eZ Publish.
-La méthode <code>rssFieldDefinition()</code> est utilisé dans une autre méthode de la même classe, on remarque la présence d’un hook qui permet d’étendre sa définition a partir des classes présentes dans nos extensions custom.
-Voici le hook qui est dans la méthode <code>fieldMap()</code></p>
-
-<pre><code>$fieldDefinition = eZRSSImport::rssFieldDefinition();
-
-$ini = eZINI::instance();
-foreach( $ini-&gt;variable( ‘RSSSettings’, ‘ActiveExtensions’ ) as $activeExtension )
-{
-    if ( file_exists( eZExtension::baseDirectory() . ‘/’ . $activeExtension . ‘/rss/’ . $activeExtension . ‘rssimport.php’ ) )
-    {
-        include_once( eZExtension::baseDirectory() . ‘/’ . $activeExtension . ‘/rss/’ . $activeExtension . ‘rssimport.php’ );
-        $fieldDefinition = eZRSSImport::arrayMergeRecursive( $fieldDefinition, call_user_func( array(  $activeExtension . ‘rssimport’, ‘rssFieldDefinition’ ), array() ) );
-    }
-}
-</code></pre>
-
-<p>Il nous suffit donc de créer une classe dans <code>extension/monextension/rss/ezrssimage.php</code> avec ce code, avec une methode du même nom: <code>rssFieldDefinition()</code></p>
-
-<pre><code>class ezrssimagerssimport
-{
-    static function rssFieldDefinition()
-    {
-        return array( ‘item’ =&gt; array( ‘elements’ =&gt; array( ‘enclosure’ =&gt; array( ‘attributes’ =&gt; array( ‘url’ ) ) ) ) );
-    }
-}
-</code></pre>
-
-<p>et de déclarer cette classe dans le fichier <code>monextension/settings/site.ini.append.php</code>.</p>
-
-<pre><code>[RSSSettings]
-ActiveExtensions[]=ezrssimage
-</code></pre>
-
-<p>Voila pour ce tutoriel. Si je trouve le temps je packagerai cela dans une extension que je publierai sur <strong>GitHub</strong> ou <strong>projects.ez.no</strong> (sauf si quelqu&rsquo;un me devance d’ici là).
-N’hésitez pas à me signaler des erreurs ou améliorations que vous jugerez utiles.</p>
-
-<p>Vous pouvez retrouver les snippets PHP précédent ici <a href="https://gist.github.com/killerwolf/5430167">https://gist.github.com/killerwolf/5430167</a></p>
-
+                        <p><p><img class="thumbnail pull-left" src="/images/post/ezpublish_media_import_rss-150x150.jpg" />eZ publish offre la possibilité sans écrire une seule ligne de code, d’importer des contenus d’un flux RSS, sous forme de contenus eZpublish. Mais cette fonctionnalité native ne permet pas d’importer les média inclus dans la balise <code>&lt;enclosure&gt;</code></p>
+<a class="read-more" href="/post/import-rss-natif-ez-publish-support-balise-enclosure/">Continue reading &raquo;</a></p>
                     </div>
                 </section>
                 
@@ -243,12 +119,8 @@ N’hésitez pas à me signaler des erreurs ou améliorations que vous jugerez u
                     </header>
 
                     <div class="post-description">
-                        <p>Les filtres par défaut d’<strong>eZ Publish</strong>, ne vous permettent pas de rogner les images pour les faire entrer dans des dimensions précises. Le fichier de conf <code>image.ini</code> vous permet d’implémenter sous <strong>eZ Publish</strong> toutes les possibilités offertes par les outils CLI d’<strong>ImageMagick</strong>. Voici 2 filtres qui effectuent la même tâche mais avec 2 manières différentes: rogner et redimensionner les images, libre à vous de les utiliser avec vos Alias</p>
-
-<pre><code>Filters[]=geometry/thumbnailize=-thumbnail &quot;%1x%2^&quot; -gravity center -extent %1x%2
-Filters[]=geometry/thumbnailize2=-geometry %1x%2^ -gravity center -crop %1x%2+0+0 +repage
-</code></pre>
-
+                        <p><p>Les filtres par défaut d’<strong>eZ Publish</strong>, ne vous permettent pas de rogner les images pour les faire entrer dans des dimensions précises. Le fichier de conf <code>image.ini</code> vous permet d’implémenter sous <strong>eZ Publish</strong> toutes les possibilités offertes par les outils CLI d’<strong>ImageMagick</strong>.</p>
+<a class="read-more" href="/post/filtre-custom-imagemagick-pour-ez-publish/">Continue reading &raquo;</a></p>
                     </div>
                 </section>
                 

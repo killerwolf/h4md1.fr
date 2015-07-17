@@ -15,8 +15,7 @@
       <pubDate>Sun, 18 Jan 2009 00:00:00 +0000</pubDate>
       
       <guid>/post/mon-premier-widget-uwa-netvibes-igoogle/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;/images/post/netvibes.jpg&#34; alt=&#34;NetVibes iGoogle Widget&#34; title=&#34;NetVibes iGoogle Widget&#34; /&gt;
-&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/netvibes.jpg&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;}&lt;/p&gt;
 
 &lt;p&gt;A la base, le projet etait prévu pour mon tag:tag NabKiller, but i wanted to mess with the netvibes UWA. Ce widget affiche les horaires de diffusion des séries que je regarde régulièrement.&lt;/p&gt;
 
@@ -31,8 +30,7 @@
 
 &lt;p&gt;Le widget prend 3 paramètres, le &lt;code&gt;tid&lt;/code&gt; et le &lt;code&gt;hash&lt;/code&gt; que vous trouvez dans l’url de votre flux personnalisé, et le troisiéme qui est l’adresse de mon API.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/post/netvibes-param.jpg&#34; alt=&#34;NetVibes iGoogle Widget&#34; title=&#34;NetVibes iGoogle Widget&#34; /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/post/netvibes-param.jpg&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;&lt;/p&gt;
 </description>
     </item>
     

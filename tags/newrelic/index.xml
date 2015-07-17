@@ -15,7 +15,7 @@
       <pubDate>Sat, 05 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>/post/name-ezpublish-web-transaction-in-ezpublish/</guid>
-      <description>&lt;p&gt;&lt;img class=&#34;thumbnail text-center&#34; src=&#34;/images/post/2013-10/newrelic_transaction.png&#34; /&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;/images/post/2013-10/newrelic_transaction.png&#34; alt=&#34;&#34; class=&#34;pure-img&#34; &gt;&lt;/p&gt;
 
 &lt;p&gt;When using &lt;strong&gt;NewRelic PHP agent&lt;/strong&gt; with an eZ Publish stack. the profiled transactions will show under &lt;code&gt;/index.php&lt;/code&gt;. To get better insights of what makes your app struggle.&lt;/p&gt;
 

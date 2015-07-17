@@ -81,33 +81,9 @@
                     </header>
 
                     <div class="post-description">
-                        <p><img class="thumbnail" src="/images/post/greasemonkey.gif" />
+                        <p><p><img src="/images/post/greasemonkey.gif" alt="" class="pure-img" >
 <a href="https://addons.mozilla.org/fr/firefox/addon/748">GreaseMonkey</a> est une extension pour Firefox, elle vous permet de prendre le controle du web. Vous trouvez tel site intéressent malgré le faite qu’il soit infesté de pub. Grace a GreaseMonkey et a un petit script de quelque ligne, le rendu visuel de votre site préféré sera modifié selon votre désir.</p>
-
-<p>Pour illustrer mon propos, j’ai écris à chaud le script JS ci-dessous, il supprime “Les Liens sponorisés” qui peuvent apparaitre lors de vos recherche sur Google. La connaissance du Javascript est biensur indispensable, mais aussi du Dom et/ou XPath .</p>
-
-<p>Je vous ai convaicu d’écrire vos propres scripts , pensez à partagez les partager sur <a href="http://userscripts.org/">UserScripts.org</a> si vous pensez qu’il peuvent être utiles à d’autre. <a href="http://userscripts.org/scripts/show/38984">Mon Google Sponsored Links remover</a> est disponible sur UserScripts et est disposé à toute critique de votre part.</p>
-
-<pre><code>// ==UserScript==
-// @name           Google Sponsored Links remover
-// @namespace      http://www.laadhari.fr
-// @description    remove google sponsored links from SERPS
-// @include        http://www.google.com/*
-// ==/UserScript==
-
-(function() {
-  var sidebarads = document.getElementById(‘mbEnd’);
-  var skyads = document.getElementById(‘tads’);
-  if (sidebarads) {
-    sidebarads.parentNode.removeChild(sidebarads);
-    }
-  if (skyads) {
-    skyads.parentNode.removeChild(skyads);
-    }  
-  }
-)();
-</code></pre>
-
+<a class="read-more" href="/post/greasemonkey-or-how-to-enhance-your-web-experience/">Continue reading &raquo;</a></p>
                     </div>
                 </section>
                 
